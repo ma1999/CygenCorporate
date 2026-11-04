@@ -1,0 +1,39 @@
+<!--Testimonial Section-->
+<section class="testimonial-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <h2>{{ settings.heading }}</h2>
+        </div>
+        <div class="testimonial-outer owl-carousel owl-theme">
+            {% for item in settings.entries %}
+            <div class="testimonial-block">
+                <div class="quote-icon"><span class="icon fa fa-quote-right"></span></div>
+                <div class="inner-box">
+                    <div class="text">{{ item.text }}</div>
+                    <div class="lower-box clearfix">
+                        <div class="pull-left">
+                            <h3>{{ item.name }}</h3>
+                            <div class="designation">{{ item.role }}</div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="rating">
+                                {% for _ in range(item.rating|default(5)|int) %}<span class="fa fa-star"></span>{% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script>
+(function(){
+    if (window.jQuery) {
+        jQuery(function($){
+            $('.testimonial-outer').owlCarousel({ items: 2, loop: true, margin: 30, rtl: true, nav: true, dots: true });
+        });
+    }
+})();
+</script>
+<!--End Testimonial Section-->

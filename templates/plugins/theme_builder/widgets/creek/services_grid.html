@@ -1,0 +1,20 @@
+<section class="section-md bg-default text-center">
+    <div class="container">
+        <h4 class="heading-decorated">{{ settings.heading }}</h4>
+        <div class="row row-50 justify-content-md-center justify-content-lg-start">
+            {% for e in settings.entries %}
+            <div class="col-md-6 col-xl-4">
+                <article class="blurb blurb-minimal">
+                    <div class="unit flex-row unit-spacing-md">
+                        <div class="unit-left"><div class="blurb-minimal__icon"><span class="icon {{ e.icon_class }}"></span></div></div>
+                        <div class="unit-body">
+                            <p class="blurb__title heading-6">{{ e.title }}</p>
+                            <p>{{ e.text }}</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

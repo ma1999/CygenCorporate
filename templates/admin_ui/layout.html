@@ -1,0 +1,143 @@
+{# Admin shell (Vuexy, vertical menu, RTL). Server renders only the chrome; menu, user and page content come from /api/admin via assets/admin-ui/app/*.js #}
+{% set A = '/assets/admin-ui/' %}
+<!DOCTYPE html>
+<html lang="fa" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" dir="rtl" data-theme="theme-default" data-assets-path="{{ A }}" data-template="vertical-menu-template">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="csrf-token" content="{{ csrf }}" />
+  <title>{% block title %}{{ page_title or 'پنل مدیریت' }}{% endblock %} | پنل مدیریت</title>
+  <link rel="icon" type="image/x-icon" href="{{ A }}img/favicon/favicon.ico" />
+  <link rel="stylesheet" href="{{ A }}vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/fonts/tabler-icons.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="{{ A }}vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="{{ A }}css/demo.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/node-waves/node-waves.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/typeahead-js/typeahead.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/toastr/toastr.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/sweetalert2/sweetalert2.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/select2/select2.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/flatpickr/flatpickr.css" />
+  {% block css %}{% endblock %}
+  <link rel="stylesheet" href="{{ A }}css/rtl.css" />
+  <link rel="stylesheet" href="{{ asset('app/admin.css') }}" />
+  <script src="{{ A }}vendor/js/helpers.js"></script>
+  <script src="{{ A }}vendor/js/template-customizer.js"></script>
+  <script src="{{ A }}js/config.js"></script>
+</head>
+<body>
+<div class="layout-wrapper layout-content-navbar">
+  <div class="layout-container">
+    <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+      <div class="app-brand demo">
+        <a class="app-brand-link" href="/admin">
+          <span class="app-brand-logo demo"><i class="ti ti-layout-dashboard text-primary" style="font-size:1.9rem"></i></span>
+          <span class="app-brand-text demo menu-text fw-bold" id="brand-text">پنل مدیریت</span>
+        </a>
+        <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+          <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+          <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+        </a>
+      </div>
+      <div class="menu-inner-shadow"></div>
+      <ul class="menu-inner py-1" id="admin-menu">
+        {% set ns = namespace(group='') %}
+        {% for m in menu %}
+          {% if m.group != ns.group and m.group != 'core' %}
+            {% set ns.group = m.group %}
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">{{ group_labels.get(m.group, m.group) }}</span></li>
+          {% endif %}
+          <li class="menu-item {{ 'active' if (request.path == m.url or (m.url != '/admin' and request.path.startswith(m.url ~ '/'))) }}">
+            <a class="menu-link" href="{{ m.url }}"><i class="menu-icon tf-icons ti {{ m.icon }}"></i><div>{{ m.title }}</div>{% if m.badge %}<div class="badge bg-danger rounded-pill ms-auto">{{ m.badge }}</div>{% endif %}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+    <div class="layout-page">
+      <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+          <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)"><i class="ti ti-menu-2 ti-sm"></i></a>
+        </div>
+        <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+          <div class="d-none d-md-block" id="page-heading">
+            <h5 class="mb-0">{{ page_title or 'پنل مدیریت' }}</h5>
+            <nav aria-label="breadcrumb"><ol class="breadcrumb mb-0 small">
+              <li class="breadcrumb-item"><a href="/admin">خانه</a></li>
+              {% if section and section.key != 'dashboard' %}
+                {% if section.group in group_labels %}<li class="breadcrumb-item">{{ group_labels[section.group] }}</li>{% endif %}
+                <li class="breadcrumb-item{{ '' if page_title and page_title != section.title else ' active' }}">{% if page_title and page_title != section.title %}<a href="{{ section.url }}">{{ section.title }}</a>{% else %}{{ section.title }}{% endif %}</li>
+              {% endif %}
+              {% if page_title and (not section or page_title != section.title) and not (section and section.key == 'dashboard') %}<li class="breadcrumb-item active">{{ page_title }}</li>{% endif %}
+            </ol></nav>
+          </div>
+          <ul class="navbar-nav flex-row align-items-center ms-auto">
+            <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+              <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown"><i class="ti ti-md"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                <li><a class="dropdown-item" href="javascript:void(0);" data-theme="light"><span class="align-middle"><i class="ti ti-sun me-2"></i>روز</span></a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" data-theme="dark"><span class="align-middle"><i class="ti ti-moon me-2"></i>شب</span></a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" data-theme="system"><span class="align-middle"><i class="ti ti-device-desktop me-2"></i>سیستم</span></a></li>
+              </ul>
+            </li>
+            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+              <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                <div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-label-primary" id="user-initial">{{ (user.username or "؟")[:1]|upper }}</span></div>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <div class="dropdown-item">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0 me-3"><div class="avatar avatar-online"><span class="avatar-initial rounded-circle bg-label-primary" id="user-initial-2">{{ (user.username or "؟")[:1]|upper }}</span></div></div>
+                      <div class="flex-grow-1"><span class="fw-semibold d-block mb-1" id="user-name">{{ user.username }}</span><small class="text-muted">مدیر سیستم</small></div>
+                    </div>
+                  </div>
+                </li>
+                <li><div class="dropdown-divider"></div></li>
+                <li><a class="dropdown-item" href="/" target="_blank"><i class="ti ti-world me-2 ti-sm"></i><span class="align-middle">مشاهده سایت</span></a></li>
+                <li><a class="dropdown-item" href="javascript:void(0);" id="btn-logout"><i class="ti ti-logout me-2 ti-sm"></i><span class="align-middle">خروج از حساب</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="content-backdrop fade"></div>
+      </div>
+    </div>
+  </div>
+  <div class="layout-overlay layout-menu-toggle"></div>
+  <div class="drag-target"></div>
+</div>
+
+<script src="{{ A }}vendor/libs/jquery/jquery.js"></script>
+<script src="{{ A }}vendor/libs/popper/popper.js"></script>
+<script src="{{ A }}vendor/js/bootstrap.js"></script>
+<script src="{{ A }}vendor/libs/node-waves/node-waves.js"></script>
+<script src="{{ A }}vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="{{ A }}vendor/libs/hammer/hammer.js"></script>
+<script src="{{ A }}vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="{{ A }}vendor/js/menu.js"></script>
+<script src="{{ A }}vendor/libs/toastr/toastr.js"></script>
+<script src="{{ A }}vendor/libs/sweetalert2/sweetalert2.js"></script>
+<script src="{{ A }}vendor/libs/select2/select2.js"></script>
+<script src="{{ A }}vendor/libs/select2/i18n/fa.js"></script>
+<script src="{{ A }}vendor/libs/moment/moment.js"></script>
+<script src="{{ A }}vendor/libs/jdate/jdate.js"></script>
+<script src="{{ A }}vendor/libs/flatpickr/flatpickr-jalali.js"></script>
+<script src="{{ A }}vendor/libs/flatpickr/l10n/fa.js"></script>
+{% block vendor_js %}{% endblock %}
+<script src="{{ A }}js/main.js"></script>
+<script src="{{ asset('app/api.js') }}"></script>
+<script src="{{ asset('app/shell.js') }}"></script>
+<script src="{{ asset('app/media-picker.js') }}"></script>
+{% block page_js %}{% endblock %}
+</body>
+</html>

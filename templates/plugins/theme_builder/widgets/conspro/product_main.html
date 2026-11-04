@@ -1,0 +1,41 @@
+<!--Project Single Section-->
+<section class="project-single-section">
+    <div class="auto-container">
+        {% if product %}
+        <h2>{{ product.name }}</h2>
+        <div class="inner-box">
+            <div class="row clearfix">
+                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                    <div class="image">
+                        <img src="{{ product.images[0].url if product.images else asset(settings.placeholder_image) }}" alt="{{ product.name }}">
+                    </div>
+                </div>
+                <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                    <div class="inner">
+                        <div class="text">
+                            <p style="white-space: pre-line;">{{ product.description or '' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% if product.extra %}
+            <div class="project-info">
+                <div class="project-inner">
+                    <div class="clearfix">
+                        {% for key, value in product.extra.items() %}
+                        <div class="column col-md-3 col-sm-6 col-xs-12">
+                            <div class="title">{{ key }}</div>
+                            <div class="text">{{ value }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% else %}
+        <p>محصولی برای نمایش انتخاب نشده است.</p>
+        {% endif %}
+    </div>
+</section>
+<!--End Project Single Section-->

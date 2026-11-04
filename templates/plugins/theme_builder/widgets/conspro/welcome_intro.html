@@ -1,0 +1,32 @@
+<!--Welcome Section-->
+<section class="welcome-section">
+    <div class="auto-container">
+        <div class="welcome-title">
+            <div class="row clearfix">
+                <div class="column col-md-3 col-sm-12 col-xs-12">
+                    <h2>{{ settings.title_line1 }} <br> <span class="theme_color">{{ settings.title_highlight }}</span></h2>
+                </div>
+                <div class="column col-md-9 col-sm-12 col-xs-12">
+                    <div class="text">{{ settings.text }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix grid-blocks">
+            {% for item in settings.services %}
+            <div class="services-block col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="image">
+                        <a href="{{ item.url }}"><img src="{{ asset(item.image) }}" alt=""></a>
+                    </div>
+                    <div class="lower-content">
+                        <a href="{{ item.url }}" class="arrow-box"><span class="arrow flaticon-forward-arrow"></span></a>
+                        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                        <div class="text">{{ item.text }}</div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--End Welcome Section-->

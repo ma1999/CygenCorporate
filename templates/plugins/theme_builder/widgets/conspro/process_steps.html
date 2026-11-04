@@ -1,0 +1,22 @@
+<!--Process Section-->
+<section class="process-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <h2>{{ settings.heading }}</h2>
+        </div>
+        <div class="row clearfix grid-blocks">
+            {% for item in settings.entries %}
+            <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <div class="icon-box">
+                        <span class="icon {{ item.icon_class }}"></span>
+                    </div>
+                    <h3>{{ item.title }}</h3>
+                    <div class="text">{{ item.text }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--End Process Section-->

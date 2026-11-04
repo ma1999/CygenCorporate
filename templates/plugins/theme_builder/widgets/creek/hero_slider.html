@@ -1,0 +1,37 @@
+<section>
+    <div class="swiper-container swiper-slider swiper-slider_fullheight bg-gray-dark hero-slider-creek" data-loop="true" data-autoplay="5000">
+        <div class="swiper-wrapper">
+            {% for slide in settings.slides %}
+            <div class="swiper-slide" style="background-image:url('{{ asset(slide.image) }}');background-size:cover;background-position:center center;">
+                <div class="swiper-slide-caption">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-xxl-7">
+                                <h1>{{ slide.title }}</h1>
+                                <h5 class="font-weight-normal primary-font">{{ slide.subtitle }}</h5>
+                                {% if slide.button_text %}<a class="button button-primary" href="{{ slide.button_url }}">{{ slide.button_text }}</a>{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<style>.hero-slider-creek{min-height:520px;position:relative;}.hero-slider-creek .swiper-wrapper{display:flex;}.hero-slider-creek .swiper-slide{min-height:520px;display:flex;align-items:center;color:#fff;flex-shrink:0;width:100%;}.hero-slider-creek .swiper-slide h1,.hero-slider-creek .swiper-slide h5{color:#fff;}</style>
+<script>
+(function(){
+    var el = document.currentScript.previousElementSibling.previousElementSibling;
+    var slides = el.querySelectorAll('.swiper-slide');
+    if (slides.length < 2) return;
+    var i = 0;
+    slides.forEach(function(s, idx){ s.style.display = idx === 0 ? 'flex' : 'none'; });
+    setInterval(function(){
+        slides[i].style.display = 'none';
+        i = (i + 1) % slides.length;
+        slides[i].style.display = 'flex';
+    }, 5000);
+})();
+</script>

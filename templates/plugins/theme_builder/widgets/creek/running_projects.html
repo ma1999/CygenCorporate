@@ -1,0 +1,22 @@
+<section class="section-md bg-default text-center">
+    <div class="container">
+        <h4 class="heading-decorated">{{ settings.heading }}</h4>
+        <div class="row row-50">
+            {% for e in settings.entries %}
+            <div class="col-md-6 col-xl-4">
+                <article class="post-project">
+                    <a class="img-thumbnail-variant-1" href="{{ asset(e.image) }}">
+                        <figure><img class="post-project__image" src="{{ asset(e.image) }}" alt=""></figure>
+                        <div class="caption"><span class="icon icon-lg linear-icon-magnifier"></span></div>
+                    </a>
+                    <div class="post-project__body">
+                        <h6 class="post-project__title"><a href="{{ e.url }}">{{ e.category }}</a></h6>
+                        <p>{{ e.text }}</p>
+                        <a class="button button-link" href="{{ e.url }}">مشاهده پروژه‌ها</a>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

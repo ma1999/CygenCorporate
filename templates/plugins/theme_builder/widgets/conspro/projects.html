@@ -1,0 +1,70 @@
+<!--Project Section (dynamic: reads from products/categories)-->
+<section class="project-section">
+    <div class="auto-container">
+        <div class="project-tab">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <h2>{{ settings.heading }}</h2>
+                </div>
+                {% if projects_categories %}
+                <div class="tab-btns-box pull-right">
+                    <div class="tabs-header">
+                        <ul class="product-tab-btns clearfix" data-tb-filter>
+                            <li class="p-tab-btn active-btn" data-filter="all">همه</li>
+                            {% for cat in projects_categories %}
+                            <li class="p-tab-btn" data-filter="{{ cat.slug }}">{{ cat.name }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            <div class="p-tabs-content">
+                <div class="row clearfix" data-tb-grid>
+                    {% for p in projects_products %}
+                    <div class="gallery-item-col col-md-4 col-sm-6 col-xs-12" data-category="{{ p.product_category_slug or '' }}" style="margin-bottom:30px;">
+                        <div class="gallery-item">
+                            <div class="inner-box">
+                                <figure class="image-box">
+                                    <img src="{{ p.image_url or asset('assets/3.jpg') }}" alt="{{ p.name }}">
+                                </figure>
+                                <div class="overlay-box">
+                                    <div class="overlay-inner">
+                                        <div class="content">
+                                            <a href="/product/{{ p.slug }}" class="image-link"><span class="icon fa fa-link"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text" style="padding-top:10px;text-align:center;">
+                                <a href="/product/{{ p.slug }}">{{ p.name }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="col-md-12"><p>هنوز محصول/پروژه‌ای ثبت نشده است.</p></div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+(function(){
+    var scope = document.currentScript.closest('.project-section');
+    if (!scope) return;
+    var btns = scope.querySelectorAll('[data-tb-filter] .p-tab-btn');
+    var items = scope.querySelectorAll('[data-tb-grid] [data-category]');
+    btns.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            btns.forEach(function(b){ b.classList.remove('active-btn'); });
+            btn.classList.add('active-btn');
+            var f = btn.getAttribute('data-filter');
+            items.forEach(function(it){
+                it.style.display = (f === 'all' || it.getAttribute('data-category') === f) ? '' : 'none';
+            });
+        });
+    });
+})();
+</script>
+<!--End Project Section-->

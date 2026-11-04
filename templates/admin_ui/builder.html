@@ -1,0 +1,249 @@
+{% extends "admin_ui/layout.html" %}
+{# Visual page builder (Alpine.js). All data via /api/admin/site-theme/*; the preview is the server-rendered HTML in an iframe. #}
+{% block content %}
+<div x-data="pageBuilder()" x-init="init()" x-cloak>
+  <div class="card mb-4"><div class="card-body d-flex flex-wrap align-items-center gap-2">
+    <a href="/admin/site-theme" class="btn btn-outline-secondary">&rarr; بازگشت</a>
+    <strong dir="ltr">{{ theme }} / {{ page }}</strong>
+    <input type="text" x-model="designName" placeholder="نام طرح" class="form-control" style="max-width:240px">
+    <select x-model="designId" @change="loadDesign(designId)" class="form-select" style="width:auto">
+      <option value="">-- طرح جدید --</option>
+      <template x-for="d in designs" :key="d.id"><option :value="d.id" x-text="d.name"></option></template>
+    </select>
+    <button @click="save(false)" :disabled="saving" class="btn btn-label-primary">ذخیره</button>
+    <button @click="save(true)" :disabled="saving" class="btn btn-primary">ذخیره و فعال‌سازی</button>
+    <button @click="deleteDesign()" x-show="designId" :disabled="saving" class="btn btn-label-danger">حذف طرح</button>
+    <span class="text-muted small" x-show="saving">در حال ذخیره...</span>
+    <span class="text-success small" x-show="savedFlash">ذخیره شد</span>
+    <span class="text-muted small" x-show="loading">در حال بارگذاری...</span>
+    <select x-show="needsSampleProduct" x-model="sampleProductSlug" @change="schedulePreview()" class="form-select" style="width:auto">
+      <option value="">-- پیش‌نمایش با کدام محصول؟ --</option>
+      <template x-for="p in sampleProducts" :key="p.id"><option :value="p.slug" x-text="p.name"></option></template>
+    </select>
+  </div></div>
+
+  <div class="row g-4">
+    {# palette is plain DOM (renderPalette): SortableJS clones these nodes into the canvas, so no Alpine directives on them #}
+    <div class="col-lg-2"><div class="card h-100"><div class="card-body">
+      <h6>المان‌ها</h6><div class="text-muted small mb-2">بکشید و در بوم رها کنید</div>
+      <ul x-ref="paletteList" class="list-unstyled mb-0 d-grid gap-2"></ul>
+    </div></div></div>
+
+    <div class="col-lg-3"><div class="card h-100"><div class="card-body">
+      <h6>بوم (ردیف‌ها)</h6>
+      <ul x-ref="canvasList" class="list-unstyled d-grid gap-2" style="min-height:200px">
+        <template x-for="row in rows" :key="row.id">
+          <li class="border rounded p-2 d-flex align-items-center gap-2" :class="row.id === selectedRowId ? 'border-primary bg-label-primary' : ''" :data-row-id="row.id" @click="selectRow(row.id)">
+            <span class="text-muted" style="cursor:move">⋮⋮</span>
+            <span x-text="catalogFor(row.boxes[0].widget)?.icon"></span>
+            <span class="flex-grow-1" x-text="catalogFor(row.boxes[0].widget)?.label || row.boxes[0].widget"></span>
+            <button @click.stop="duplicateRow(row.id)" class="btn btn-sm btn-text-primary p-1" title="تکثیر">تکثیر</button>
+            <button @click.stop="removeRow(row.id)" class="btn btn-sm btn-text-danger p-1">حذف</button>
+          </li>
+        </template>
+      </ul>
+      <p class="text-muted small" x-show="rows.length === 0">هیچ ردیفی وجود ندارد. یک المان از پالت بکشید.</p>
+    </div></div></div>
+
+    <div class="col-lg-3"><div class="card h-100"><div class="card-body">
+      <h6>تنظیمات</h6>
+      <template x-if="!selBox()"><p class="text-muted small">یک ردیف را برای ویرایش تنظیمات انتخاب کنید.</p></template>
+      <template x-if="selBox()">
+        <div class="d-grid gap-3">
+          <template x-for="field in (selectedDef()?.fields || [])" :key="field.key">
+            <div>
+              <label class="form-label small" x-text="field.label"></label>
+              <template x-if="['text','url'].includes(field.type)"><input type="text" x-model="selBox().settings[field.key]" @input="schedulePreview()" class="form-control form-control-sm"></template>
+              <template x-if="field.type === 'image'">
+                <div class="input-group input-group-sm">
+                  <input type="text" x-model="selBox().settings[field.key]" @input="schedulePreview()" placeholder="assets/x.jpg یا آدرس کامل" class="form-control" dir="ltr">
+                  <button type="button" class="btn btn-outline-secondary" @click="pick(field.key)"><i class="ti ti-photo"></i></button>
+                </div>
+              </template>
+              <template x-if="field.type === 'number'"><input type="number" x-model.number="selBox().settings[field.key]" @input="schedulePreview()" class="form-control form-control-sm"></template>
+              <template x-if="field.type === 'textarea'"><textarea x-model="selBox().settings[field.key]" @input="schedulePreview()" rows="3" class="form-control form-control-sm"></textarea></template>
+              <template x-if="field.type === 'repeater'">
+                <div class="border rounded p-2 d-grid gap-2">
+                  <template x-for="(item, idx) in (selBox().settings[field.key] || [])" :key="idx">
+                    <div class="border rounded p-2 d-grid gap-1">
+                      <template x-for="sf in field.item_fields" :key="sf.key">
+                        <div>
+                          <label class="small text-muted" x-text="sf.label"></label>
+                          <template x-if="sf.type === 'textarea'"><textarea x-model="selBox().settings[field.key][idx][sf.key]" @input="schedulePreview()" rows="2" class="form-control form-control-sm"></textarea></template>
+                          <template x-if="sf.type !== 'textarea'"><input :type="sf.type === 'number' ? 'number' : 'text'" x-model="selBox().settings[field.key][idx][sf.key]" @input="schedulePreview()" class="form-control form-control-sm"></template>
+                        </div>
+                      </template>
+                      <button @click="removeRepeaterItem(field.key, idx)" class="btn btn-sm btn-text-danger">حذف این مورد</button>
+                    </div>
+                  </template>
+                  <button @click="addRepeaterItem(field.key, field.item_fields)" class="btn btn-sm btn-label-primary">+ افزودن مورد</button>
+                </div>
+              </template>
+            </div>
+          </template>
+        </div>
+      </template>
+    </div></div></div>
+
+    <div class="col-lg-4"><div class="card h-100"><div class="card-body">
+      <h6>پیش‌نمایش لحظه‌ای</h6>
+      <iframe x-ref="previewFrame" class="w-100 border rounded" style="height:80vh"></iframe>
+    </div></div></div>
+  </div>
+</div>
+{% endblock %}
+{% block page_js %}
+<style>[x-cloak]{display:none !important}</style>
+<script src="/assets/admin-ui/vendor/libs/sortablejs/sortable.js"></script>
+<script>
+function pageBuilder() {
+  const API = '/api/admin/site-theme/builder/' + encodeURIComponent({{ theme|tojson }}) + '/' + encodeURIComponent({{ page|tojson }});
+  const clone = (o) => JSON.parse(JSON.stringify(o));
+  return {
+    catalog: [], rows: [], designId: '', designName: 'طرح جدید', designs: [], selectedRowId: null,
+    loading: true, saving: false, savedFlash: false, _previewTimer: null,
+    needsSampleProduct: false, sampleProducts: [], sampleProductSlug: '',
+
+    async init() {
+      await Admin.safe(() => this.loadBootstrap());
+      this.renderPalette();
+      this.$nextTick(() => this.setupSortable());
+      if (this.needsSampleProduct) {
+        try {
+          const res = await fetch('/api/products');
+          const data = await res.json();
+          this.sampleProducts = data.products || [];
+          if (this.sampleProducts.length) this.sampleProductSlug = this.sampleProducts[0].slug;
+        } catch (e) { /* products plugin may be disabled */ }
+      }
+      this.schedulePreview();
+    },
+
+    async loadBootstrap() {
+      this.loading = true;
+      try {
+        const d = await Admin.api.get(API);
+        this.catalog = d.catalog || [];
+        this.rows = (d.design && d.design.rows) || [];
+        this.designId = (d.design && d.design.id) || '';
+        this.designName = (d.design && d.design.name) || 'طرح جدید';
+        this.designs = d.designs || [];
+        this.needsSampleProduct = !!d.needs_sample_product;
+        if (this.rows.length) this.selectedRowId = this.rows[0].id;
+      } finally { this.loading = false; }
+    },
+
+    renderPalette() {
+      const ul = this.$refs.paletteList;
+      if (!ul) return;
+      ul.innerHTML = this.catalog.map((w) => `
+        <li class="border rounded p-2 d-flex flex-wrap align-items-center gap-2 bg-label-secondary" style="cursor:move;min-width:0" data-widget-type="${Admin.esc(w.type)}">
+          <span>${Admin.esc(w.icon)}</span><span class="flex-grow-1 text-break" style="min-width:0">${Admin.esc(w.label)}</span>
+          ${w.dynamic ? '<span class="badge bg-label-primary">داینامیک</span>' : ''}
+        </li>`).join('');
+    },
+
+    catalogFor(type) { return this.catalog.find((c) => c.type === type); },
+    selectedRow() { return this.rows.find((r) => r.id === this.selectedRowId) || null; },
+    selBox() { const r = this.selectedRow(); return r ? r.boxes[0] : null; },
+    selectedDef() { const b = this.selBox(); return b ? this.catalogFor(b.widget) : null; },
+    selectRow(id) { this.selectedRowId = id; },
+    newId(prefix) { return prefix + '-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8); },
+    pick(key) { if (Admin.pickMedia) Admin.pickMedia((url) => { this.selBox().settings[key] = url; this.schedulePreview(); }); },
+
+    addRowFromType(type, index) {
+      const def = this.catalogFor(type);
+      if (!def) return;
+      const row = { id: this.newId('row'), boxes: [{ id: this.newId('box'), widget: type, settings: clone(def.defaults) }] };
+      if (index === undefined || index < 0 || index > this.rows.length) this.rows.push(row); else this.rows.splice(index, 0, row);
+      this.selectedRowId = row.id;
+      this.schedulePreview();
+    },
+    duplicateRow(id) {
+      const idx = this.rows.findIndex((r) => r.id === id);
+      if (idx === -1) return;
+      const c = clone(this.rows[idx]);
+      c.id = this.newId('row');
+      c.boxes = c.boxes.map((b) => ({ ...b, id: this.newId('box') }));
+      this.rows.splice(idx + 1, 0, c);
+      this.selectedRowId = c.id;
+      this.schedulePreview();
+    },
+    removeRow(id) {
+      this.rows = this.rows.filter((r) => r.id !== id);
+      if (this.selectedRowId === id) this.selectedRowId = null;
+      this.schedulePreview();
+    },
+    addRepeaterItem(fieldKey, itemFields) {
+      const box = this.selBox();
+      if (!box) return;
+      if (!Array.isArray(box.settings[fieldKey])) box.settings[fieldKey] = [];
+      const item = {};
+      (itemFields || []).forEach((f) => { item[f.key] = f.type === 'number' ? 0 : ''; });
+      box.settings[fieldKey].push(item);
+      this.schedulePreview();
+    },
+    removeRepeaterItem(fieldKey, idx) { const box = this.selBox(); if (box) { box.settings[fieldKey].splice(idx, 1); this.schedulePreview(); } },
+
+    setupSortable() {
+      if (!window.Sortable) return;
+      Sortable.create(this.$refs.paletteList, { group: { name: 'builder', pull: 'clone', put: false }, sort: false, animation: 150 });
+      Sortable.create(this.$refs.canvasList, {
+        group: { name: 'builder', pull: true, put: true }, animation: 150,
+        onAdd: (evt) => {
+          const type = evt.item.getAttribute('data-widget-type');
+          const index = evt.newIndex;
+          if (evt.item.parentNode) evt.item.parentNode.removeChild(evt.item);
+          if (type) this.addRowFromType(type, index);
+        },
+        onUpdate: (evt) => { const moved = this.rows.splice(evt.oldIndex, 1)[0]; this.rows.splice(evt.newIndex, 0, moved); this.schedulePreview(); },
+      });
+    },
+
+    schedulePreview() { clearTimeout(this._previewTimer); this._previewTimer = setTimeout(() => this.refreshPreview(), 400); },
+    async refreshPreview() {
+      try {
+        const res = await Admin.api.post(API + '/preview', { rows: this.rows, sample_product_slug: this.sampleProductSlug }, { raw: true });
+        const html = await res.text();
+        if (this.$refs.previewFrame) this.$refs.previewFrame.srcdoc = html;
+      } catch (e) { /* preview is best-effort */ }
+    },
+    async refreshDesignsList() { const d = await Admin.api.get(API + '/designs'); this.designs = d.designs || []; },
+
+    async loadDesign(id) {
+      if (!id) { this.rows = []; this.designId = ''; this.designName = 'طرح جدید'; this.schedulePreview(); return; }
+      const d = await Admin.safe(() => Admin.api.get(API + '/designs/' + id));
+      if (!d) return;
+      this.rows = d.design.rows || [];
+      this.designId = d.design.id;
+      this.designName = d.design.name;
+      this.selectedRowId = this.rows.length ? this.rows[0].id : null;
+      this.schedulePreview();
+    },
+
+    async save(setActive) {
+      this.saving = true;
+      try {
+        const d = await Admin.safe(() => Admin.api.post(API + '/designs', { id: this.designId || null, name: this.designName, rows: this.rows, set_active: !!setActive }));
+        if (d) {
+          this.designId = d.design.id;
+          this.savedFlash = true;
+          setTimeout(() => { this.savedFlash = false; }, 2000);
+          await this.refreshDesignsList();
+        }
+      } finally { this.saving = false; }
+    },
+
+    async deleteDesign() {
+      if (!this.designId || !(await Admin.confirm('این طرح حذف شود؟'))) return;
+      if (await Admin.safe(() => Admin.api.del(API + '/designs/' + this.designId))) {
+        this.designId = ''; this.rows = []; this.designName = 'طرح جدید';
+        await this.refreshDesignsList();
+        this.schedulePreview();
+      }
+    },
+  };
+}
+</script>
+<script src="/assets/admin-ui/vendor/libs/alpinejs/alpine.min.js" defer></script>
+{% endblock %}

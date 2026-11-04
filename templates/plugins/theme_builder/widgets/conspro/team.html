@@ -1,0 +1,36 @@
+<!--Team Section-->
+<section class="team-section">
+    <div class="auto-container">
+        <div class="sec-title">
+            <h2>{{ settings.heading }}</h2>
+        </div>
+        <div class="row clearfix grid-blocks">
+            {% for m in settings.members %}
+            <div class="team-member col-md-6 col-sm-12 col-xs-12">
+                <div class="inner-box">
+                    <div class="row clearfix">
+                        <div class="image-column col-md-5 col-sm-5 col-xs-12">
+                            <div class="image">
+                                <img src="{{ asset(m.image) }}" alt="{{ m.name }}">
+                            </div>
+                        </div>
+                        <div class="content-column col-md-7 col-sm-7 col-xs-12">
+                            <div class="content-inner">
+                                <div class="designation">{{ m.role }}</div>
+                                <h3><a href="#">{{ m.name }}</a></h3>
+                                <div class="text">{{ m.text }}</div>
+                                <ul class="social-icon-one">
+                                    {% if m.facebook %}<li><a href="{{ m.facebook }}"><span class="fa fa-facebook"></span></a></li>{% endif %}
+                                    {% if m.twitter %}<li><a href="{{ m.twitter }}"><span class="fa fa-twitter"></span></a></li>{% endif %}
+                                    {% if m.linkedin %}<li><a href="{{ m.linkedin }}"><span class="fa fa-linkedin"></span></a></li>{% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!--End Team Section-->

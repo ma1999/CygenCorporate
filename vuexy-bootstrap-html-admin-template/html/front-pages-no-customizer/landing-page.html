@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-wide" data-assets-path="../../assets/" data-template="front-pages-no-customizer" data-theme="theme-default" dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>صفحات سایت - لندینگ | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="../../assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="../../assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link  href="../../assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link  href="../../assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="../../assets/css/demo.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/css/pages/front-page.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="../../assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/nouislider/nouislider.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="../../assets/vendor/css/pages/front-page-landing.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../assets/js/front-config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="../../assets/css/rtl.css" rel="stylesheet"/>
+</head>
+
+<body>
+<script src="../../assets/vendor/js/dropdown-hover.js"></script>
+<script src="../../assets/vendor/js/mega-dropdown.js"></script>
+<!-- Navbar: Start -->
+<nav class="layout-navbar shadow-none py-0">
+    <div class="container">
+        <div class="navbar navbar-expand-lg landing-navbar px-3 px-md-4">
+            <!-- Menu logo wrapper: Start -->
+            <div class="navbar-brand app-brand demo d-flex py-0 py-lg-2 me-4">
+                <!-- Mobile menu toggle: Start-->
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="ناوبری را تغییر دهید" class="navbar-toggler border-0 px-0 me-2" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                    <i class="ti ti-menu-2 ti-sm align-middle"></i>
+                </button>
+                <!-- Mobile menu toggle: End-->
+                <a class="app-brand-link" href="landing-page.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold ms-2 ps-1">Vuexy</span>
+                </a>
+            </div>
+            <!-- Menu logo wrapper: End -->
+            <!-- Menu wrapper: Start -->
+            <div class="collapse navbar-collapse landing-nav-menu" id="navbarSupportedContent">
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="ناوبری را تغییر دهید" class="navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                    <i class="ti ti-x ti-sm"></i>
+                </button>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link fw-medium" href="landing-page.html#landingHero">صفحه اصلی</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="landing-page.html#landingFeatures">امکانات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="landing-page.html#landingTeam">تیم ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="landing-page.html#landingFAQ">سوالات متداول</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="landing-page.html#landingContact">ارتباط با ما</a>
+                    </li>
+                    <li class="nav-item mega-dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium" data-bs-toggle="mega-dropdown" data-trigger="hover" href="javascript:void(0);">
+                            <span data-i18n="Pages">صفحات</span>
+                        </a>
+                        <div class="dropdown-menu p-4">
+                            <div class="row gy-4">
+                                <div class="col-12 col-lg">
+                                    <div class="h6 d-flex align-items-center mb-2 mb-lg-3">
+                                        <div class="avatar avatar-sm flex-shrink-0 me-2">
+                                            <span class="avatar-initial rounded bg-label-primary">
+                                                <i class="ti ti-layout-grid"></i>
+                                            </span>
+                                        </div>
+                                        <span class="ps-1">صفحات سایت</span>
+                                    </div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="pricing-page.html">
+                                                <i class="ti ti-circle me-1"></i>
+                                                <span data-i18n="Pricing">قیمت گذاری</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="payment-page.html">
+                                                <i class="ti ti-circle me-1"></i>
+                                                <span data-i18n="Payment">پرداخت</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="checkout-page.html">
+                                                <i class="ti ti-circle me-1"></i>
+                                                <span data-i18n="Checkout">ثبت سفارش</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="help-center-landing.html">
+                                                <i class="ti ti-circle me-1"></i>
+                                                <span data-i18n="Help Center">مرکز پشتیبانی</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="help-center-article.html">
+                                                <i class="ti ti-circle me-1"></i>
+                                                <span data-i18n="Help Center">صفحه آموزش</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <div class="h6 d-flex align-items-center mb-2 mb-lg-3">
+                                        <div class="avatar avatar-sm flex-shrink-0 me-2">
+                                            <span class="avatar-initial rounded bg-label-primary">
+                                                <i class="ti ti-lock-open"></i>
+                                            </span>
+                                        </div>
+                                        <span class="ps-1">احراز هویت</span>
+                                    </div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-login-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ورود به سیستم (پایه)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-login-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ورود به سیستم (کاور)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-register-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ثبت نام (پایه)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-register-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ثبت نام (کاور)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-register-multisteps.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ثبت نام (چند مرحله‌ای)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-forgot-password-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                فراموشی رمز ورود (اصلی)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-forgot-password-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                فراموشی رمز ورود (کاور)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-reset-password-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ریست رمز ورود (اصلی)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-reset-password-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                ریست رمز ورود (کاور)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <div class="h6 d-flex align-items-center mb-2 mb-lg-3">
+                                        <div class="avatar avatar-sm flex-shrink-0 me-2">
+                                            <span class="avatar-initial rounded bg-label-primary">
+                                                <i class="ti ti-file-analytics"></i>
+                                            </span>
+                                        </div>
+                                        <span class="ps-1">دیگر صفحات</span>
+                                    </div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/pages-misc-error.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                خطای 404
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/pages-misc-under-maintenance.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                دردست تعمیر
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/pages-misc-comingsoon.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                به زودی
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/pages-misc-not-authorized.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                عدم دسترسی
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-verify-email-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                تأیید ایمیل (پایه)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-verify-email-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                تأیید ایمیل (کاور)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-two-steps-basic.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                تأیید دو مرحله (پایه)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link mega-dropdown-link" href="../vertical-menu-template-no-customizer/auth-two-steps-cover.html" target="_blank">
+                                                <i class="ti ti-circle me-1"></i>
+                                                تأیید دو مرحله (کاور)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <div class="bg-body nav-img-col p-2">
+                                        <img alt="تصویر col مورد ناوبری" class="w-100" src="../../assets/img/front-pages/misc/nav-item-col-img.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="../vertical-menu-template-no-customizer/index.html" target="_blank">قالب مدیریت</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="landing-menu-overlay d-lg-none"></div>
+            <!-- Menu wrapper: End -->
+            <!-- Toolbar: Start -->
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- navbar button: Start -->
+                <li>
+                    <a class="btn btn-primary" href="../vertical-menu-template-no-customizer/auth-login-cover.html" target="_blank">
+                        <span class="tf-icons ti ti-login scaleX-n1-rtl me-md-1"></span>
+                        <span class="d-none d-md-block">ورود / ثبت نام</span>
+                    </a>
+                </li>
+                <!-- navbar button: End -->
+            </ul>
+            <!-- Toolbar: End -->
+        </div>
+    </div>
+</nav>
+<!-- Navbar: End -->
+<!-- Sections:Start -->
+<div class="scrollspy-example" data-bs-spy="scroll">
+    <!-- Hero: Start -->
+    <section id="hero-animation">
+        <div class="section-py landing-hero position-relative" id="landingHero">
+            <div class="container">
+                <div class="hero-text-box text-center">
+                    <h1 class="text-primary hero-title display-6 fw-bold ">
+                        داشـبورد مناسـب برایءء هرصنفـ
+                    </h1>
+                    <h2 class="hero-sub-title h6 mb-4 mt-2 pb-1 lh-2">
+                        قالب مدیریت آماده‌ی استفاده ، مناسب هر شغلی
+                        <br class="d-none d-lg-block"/>
+                        همراه با گارانتی ، پشتیبانی و شخصی سازی آسان
+                    </h2>
+                    <div class="landing-hero-btn d-inline-block position-relative">
+                        <span class="hero-btn-item position-absolute d-none d-md-flex text-heading">
+                            فرصت استثناییءء
+                            <img alt="پیکان انجمن" class="scaleX-n1-rtl" src="../../assets/img/front-pages/icons/Join-community-arrow.png"/>
+                        </span>
+                        <a class="btn btn-primary btn-lg" href="#landingPricing">خـرید از مارکئئت راسـتچین</a>
+                    </div>
+                </div>
+                <div class="hero-animation-img" id="heroDashboardAnimation">
+                    <a href="../vertical-menu-template-no-customizer/app-ecommerce-dashboard.html" target="_blank">
+                        <div class="position-relative hero-dashboard-img" id="heroAnimationImg">
+                            <img alt="داشبورد قهرمان" class="animation-img" data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png" data-app-light-img="front-pages/landing-page/hero-dashboard-light.png" src="../../assets/img/front-pages/landing-page/hero-dashboard-light.png"/>
+                            <img alt="عناصر قهرمان" class="position-absolute hero-elements-img animation-img top-0 start-0" data-app-dark-img="front-pages/landing-page/hero-elements-dark.png" data-app-light-img="front-pages/landing-page/hero-elements-light.png" src="../../assets/img/front-pages/landing-page/hero-elements-light.png"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="landing-hero-blank"></div>
+    </section>
+    <!-- Hero: End -->
+    <!-- Useful features: Start -->
+    <section class="section-py landing-features" id="landingFeatures">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">ویژگی‌هایءء قالب</span>
+            </div>
+            <h3 class="text-center mb-2 fw-medium">
+                <span class="section-title">ابـزارهایءء مـورد نـیاز</span>
+                برایءء مـدیریت هـر سـیستمیءء
+            </h3>
+            <p class="text-center mb-3 mb-md-5 pb-3"> نه تنها ابزارهایءء آماده بلکه پکیج‌ها، اپلیکیشن‌ها و هرچیزیءء که برای یک پنل مدیریت لازم داریءء.</p>
+            <div class="features-icon-wrapper row gx-0 gy-4 g-sm-5">
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="شارژ لپ تاپ" src="../../assets/img/front-pages/icons/laptop.png"/>
+                    </div>
+                    <h5 class="mb-2">کد حرفه‌ایءء</h5>
+                    <p class="features-icon-description"> کدهای تمیز حرفه‌ای که همه توسعه دهندگان به راحتی آن را درک می کنند و عاشق آن می شوند.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="انتقال به بالا" src="../../assets/img/front-pages/icons/rocket.png"/>
+                    </div>
+                    <h5 class="mb-2">بروز بودن</h5>
+                    <p class="features-icon-description"> به روزرسانی رایگان و متعدد، از جمله رفع ایرادات ، دموهای متنوع و ویژگی های جدید.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="ویرایش کنید" src="../../assets/img/front-pages/icons/paper.png"/>
+                    </div>
+                    <h5 class="mb-2">کیت استارتر</h5>
+                    <p class="features-icon-description"> پروژه خود را به سرعت بدون نیاز به حذف ویژگی های غیر ضروری شروع کنید.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="جامد را سه بعدی انتخاب کنید" src="../../assets/img/front-pages/icons/check.png"/>
+                    </div>
+                    <h5 class="mb-2">API آماده</h5>
+                    <p class="features-icon-description"> فقط پایگاه داده را متصل و داده های خود را در عرض چند ثانیه دریافت کنید.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="کمربند نجات" src="../../assets/img/front-pages/icons/user.png"/>
+                    </div>
+                    <h5 class="mb-2">پشتیبانی عالی</h5>
+                    <p class="features-icon-description">پشتیبانی رایگان از طریق تیکت و قابل تمدید در سایت راستچین.</p>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center features-icon-box">
+                    <div class="text-center mb-3">
+                        <img alt="پرونده های گوگل" src="../../assets/img/front-pages/icons/keyboard.png"/>
+                    </div>
+                    <h5 class="mb-2">مستندات</h5>
+                    <p class="features-icon-description">یک داکیومنت کامل برای آشنایی با مواردی که نیاز است بدانید.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Useful features: End -->
+    <!-- Real customers reviews: Start -->
+    <section class="section-py bg-body landing-reviews pb-0" id="landingReviews">
+        <!-- What people say slider: Start -->
+        <div class="container">
+            <div class="row align-items-center gx-0 gy-4 g-lg-5">
+                <div class="col-md-6 col-lg-5 col-xl-3">
+                    <div class="mb-3 pb-1">
+                        <span class="badge bg-label-primary">نظرات مشتریان</span>
+                    </div>
+                    <h3 class="mb-2">
+                        <span class="section-title">آنچه کاربران می‌گویند!</span>
+                    </h3>
+                    <p class="mb-3 mb-md-5"> معروف ترین سازمان ها در مورد
+                        <br class="d-none d-xl-block"/>
+                        ما چه نظری دارند؟
+                    </p>
+                    <div class="landing-reviews-btns">
+                        <button class="btn btn-label-primary reviews-btn me-3 scaleX-n1-rtl" id="reviews-previous-btn" type="button">
+                            <i class="ti ti-chevron-left ti-sm"></i>
+                        </button>
+                        <button class="btn btn-label-primary reviews-btn scaleX-n1-rtl" id="reviews-next-btn" type="button">
+                            <i class="ti ti-chevron-right ti-sm"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 col-xl-9">
+                    <div class="swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3">
+                        <div class="swiper" id="swiper-reviews">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-1.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">حمیدرضا زمانی</h6>
+                                                    <p class="small text-muted mb-0">مدیرعامل Airbnb</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-2.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/2.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">ترلان پروانه</h6>
+                                                    <p class="small text-muted mb-0">بنیانگذار Hubspot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-3.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/3.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">بهروز وثوقی</h6>
+                                                    <p class="small text-muted mb-0">رهبر طراحی در Dribbble</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-4.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/4.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">بهاره کیان‌افشار</h6>
+                                                    <p class="small text-muted mb-0">بنیانگذار همراه‌اول</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-5.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/5.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">حمید فرخ نژاد</h6>
+                                                    <p class="small text-muted mb-0">بنیانگذار Hubspot</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card h-100">
+                                        <div class="card-body text-body d-flex flex-column justify-content-between h-100">
+                                            <div class="mb-3">
+                                                <img alt="لوگوی مشتری" class="client-logo img-fluid" src="../../assets/img/front-pages/branding/logo-6.png"/>
+                                            </div>
+                                            <p class="justify-text"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                                            <div class="text-warning mb-3">
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star-filled ti-sm"></i>
+                                                <i class="ti ti-star ti-sm"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar me-2 avatar-sm">
+                                                    <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-0">مهدی پاکدل</h6>
+                                                    <p class="small text-muted mb-0">بنیانگذار ایرانسل</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- What people say slider: End -->
+        <hr class="m-0"/>
+        <!-- Logo slider: Start -->
+        <div class="container">
+            <div class="swiper-logo-carousel py-4 my-lg-2">
+                <div class="swiper" id="swiper-clients-logos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img alt="لوگوی مشتری" class="client-logo" data-app-dark-img="front-pages/branding/logo_1-dark.png" data-app-light-img="front-pages/branding/logo_1-light.png" src="../../assets/img/front-pages/branding/logo_1-light.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="لوگوی مشتری" class="client-logo" data-app-dark-img="front-pages/branding/logo_2-dark.png" data-app-light-img="front-pages/branding/logo_2-light.png" src="../../assets/img/front-pages/branding/logo_2-light.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="لوگوی مشتری" class="client-logo" data-app-dark-img="front-pages/branding/logo_3-dark.png" data-app-light-img="front-pages/branding/logo_3-light.png" src="../../assets/img/front-pages/branding/logo_3-light.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="لوگوی مشتری" class="client-logo" data-app-dark-img="front-pages/branding/logo_4-dark.png" data-app-light-img="front-pages/branding/logo_4-light.png" src="../../assets/img/front-pages/branding/logo_4-light.png"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img alt="لوگوی مشتری" class="client-logo" data-app-dark-img="front-pages/branding/logo_5-dark.png" data-app-light-img="front-pages/branding/logo_5-light.png" src="../../assets/img/front-pages/branding/logo_5-light.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Logo slider: End -->
+    </section>
+    <!-- Real customers reviews: End -->
+    <!-- Our great team: Start -->
+    <section class="section-py landing-team" id="landingTeam">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">تیم بزرگ ما</span>
+            </div>
+            <h3 class="text-center mb-2 fw-medium">پشتیبانی توسط
+                <span class="section-title">تیمیءء متخصص و باتجربه</span>
+            </h3>
+            <p class="text-center mb-md-5 pb-3 mt-2">چه کسانی خالق این قالب عالی هستن؟</p>
+            <div class="row gy-5 mt-2">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-primary position-relative team-image-box">
+                            <img alt="تصویر انسان" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" src="../../assets/img/front-pages/landing-page/team-member-1.png"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-primary text-center">
+                            <h5 class="card-title mb-0">ملیحه رستمی</h5>
+                            <p class="text-muted mb-0">مدیر پروژه</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-info position-relative team-image-box">
+                            <img alt="تصویر انسان" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" src="../../assets/img/front-pages/landing-page/team-member-2.png"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-info text-center">
+                            <h5 class="card-title mb-0">امیر جدیدی</h5>
+                            <p class="text-muted mb-0">طراح رابط کاربری</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-danger position-relative team-image-box">
+                            <img alt="تصویر انسان" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" src="../../assets/img/front-pages/landing-page/team-member-3.png"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-danger text-center">
+                            <h5 class="card-title mb-0">لیندا کیانی</h5>
+                            <p class="text-muted mb-0">برنامه نویس ارشد</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card mt-3 mt-lg-0 shadow-none">
+                        <div class="bg-label-success position-relative team-image-box">
+                            <img alt="تصویر انسان" class="position-absolute card-img-position bottom-0 start-50 scaleX-n1-rtl" src="../../assets/img/front-pages/landing-page/team-member-4.png"/>
+                        </div>
+                        <div class="card-body border border-top-0 border-label-success text-center">
+                            <h5 class="card-title mb-0">پارسا جلالی</h5>
+                            <p class="text-muted mb-0">مدیر بازاریابی</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our great team: End -->
+    <!-- Pricing plans: Start -->
+    <section class="section-py bg-body landing-pricing" id="landingPricing">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">طرح های قیمت گذاری</span>
+            </div>
+            <h3 class="text-center mb-3 fw-medium">
+                پلن‌هایءء همکاریءء
+                <span class="section-title">با بهترین قیمت گذاریءء</span>
+            </h3>
+            <p class="text-center mb-4 pb-3"> همه پلن‌ها شامل بیش از 40 ابزار و ویژگی پیشرفته برای تقویت محصول شما هستند.
+                <br/>
+                بهترین پلن‌ را متناسب با نیاز خود انتخاب کنید.
+            </p>
+            <div class="text-center mb-5">
+                <div class="position-relative d-inline-block pt-3 pt-md-0">
+                    <label class="switch switch-primary me-0">
+                        <span class="switch-label">پرداخت ماهانه</span>
+                        <input checked class="switch-input price-duration-toggler" type="checkbox"/>
+                        <span class="switch-toggle-slider">
+                            <span class="switch-on"></span>
+                            <span class="switch-off"></span>
+                        </span>
+                        <span class="switch-label">پرداخت سالانه</span>
+                    </label>
+                    <div class="pricing-plans-item position-absolute d-flex">
+                        <img alt="طرح های قیمت گذاری arrow" class="scaleX-n1-rtl" src="../../assets/img/front-pages/icons/pricing-plans-arrow.png"/>
+                        <span class="fw-medium mt-2 ms-1"> 25% تخفیف استثنایی</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 pt-lg-3">
+                <!-- Basic Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img alt="نماد هواپیما کاغذی" class="mb-4 pb-2" src="../../assets/img/front-pages/icons/paper-airplane.png"/>
+                                <h4 class="mb-2">اقتصادیءء</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            10٬000٬000
+                                        </bdi>
+                                    </span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            8٬000٬000
+                                        </bdi>
+                                    </span>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">100٬000٬000 ‍ءتء در سال</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        اپلیکیشن pwa
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        پک کامل گرافیکی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        دیجیتال مارکتینگ
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی هویت بصری
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت وردپرس
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت اختصاصی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        توسعه اپلیکیشن موبایل
+                                    </h5>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a class="btn btn-label-primary" href="payment-page.html">شروع کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basic Plan: End -->
+                <!-- Favourite Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card border border-primary shadow-lg">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img alt="نماد هواپیما" class="mb-4 pb-2" src="../../assets/img/front-pages/icons/plane.png"/>
+                                <h4 class="mb-2">پیشرفته</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            15٬000٬000
+                                        </bdi>
+                                    </span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            12٬000٬000
+                                        </bdi>
+                                    </span>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">200٬000٬000 ‍ءتء در سال</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        توسعه اپلیکیشن موبایل
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت اختصاصی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت وردپرس
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی هویت بصری
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        دیجیتال مارکتینگ
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        پک کامل گرافیکی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        اپلیکیشن pwa
+                                    </h5>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a class="btn btn-primary" href="payment-page.html">شروع کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Favourite Plan: End -->
+                <!-- Standard Plan: Start -->
+                <div class="col-xl-4 col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-center">
+                                <img alt="نماد هواپیما" class="mb-4 pb-2" src="../../assets/img/front-pages/icons/plane.png"/>
+                                <h4 class="mb-2">تـجاریءء</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="price-monthly h1 text-primary fw-bold mb-0">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            25٬000٬000
+                                        </bdi>
+                                    </span>
+                                    <span class="price-yearly h1 text-primary fw-bold mb-0 d-none">
+                                        <bdi>
+                                            <svg class="toman" width="1rem" height="1rem">
+                                                <use xlink:href="#toman">
+                                                    <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                            20٬000٬000
+                                        </bdi>
+                                    </span>
+                                </div>
+                                <div class="position-relative pt-2">
+                                    <div class="price-yearly text-muted price-yearly-toggle d-none">1٬000٬000٬000 ‍ءتء در سال</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        اپلیکیشن pwa
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        پک کامل گرافیکی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        دیجیتال مارکتینگ
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی هویت بصری
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت وردپرس
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        طراحی سایت اختصاصی
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 class="fw-medium">
+                                        <span class="badge badge-center rounded-pill bg-label-primary p-0 me-2">
+                                            <i class="ti ti-check ti-xs"></i>
+                                        </span>
+                                        توسعه اپلیکیشن موبایل
+                                    </h5>
+                                </li>
+                            </ul>
+                            <div class="d-grid mt-4 pt-3">
+                                <a class="btn btn-label-primary" href="payment-page.html">شروع کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Standard Plan: End -->
+            </div>
+        </div>
+    </section>
+    <!-- Pricing plans: End -->
+    <!-- Fun facts: Start -->
+    <section class="section-py landing-fun-facts" id="landingFunFacts">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-primary shadow-none">
+                        <div class="card-body text-center">
+                            <img alt="لپ تاپ" class="mb-2" src="../../assets/img/front-pages/icons/laptop.png"/>
+                            <h5 class="h2 mb-1">7.1k+</h5>
+                            <p class="fw-medium mb-0"> تیکت‌های پشتیبانی
+                                <br/>
+                                رفع مشکل شده
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-success shadow-none">
+                        <div class="card-body text-center">
+                            <img alt="لپ تاپ" class="mb-2" src="../../assets/img/front-pages/icons/user-success.png"/>
+                            <h5 class="h2 mb-1">50k+</h5>
+                            <p class="fw-medium mb-0"> مشتری با ما
+                                <br/>
+                                همکاری کردند
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-info shadow-none">
+                        <div class="card-body text-center">
+                            <img alt="لپ تاپ" class="mb-2" src="../../assets/img/front-pages/icons/diamond-info.png"/>
+                            <h5 class="h2 mb-1">4.8/5</h5>
+                            <p class="fw-medium mb-0"> دارای امتیاز بالا
+                                <br/>
+                                و رضایت کاربران
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card border border-label-warning shadow-none">
+                        <div class="card-body text-center">
+                            <img alt="لپ تاپ" class="mb-2" src="../../assets/img/front-pages/icons/check-warning.png"/>
+                            <h5 class="h2 mb-1">100%</h5>
+                            <p class="fw-medium mb-0"> ضمانت برگشت وجه
+                                <br/>
+                                درصورت عدم رضایت
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fun facts: End -->
+    <!-- FAQ: Start -->
+    <section class="section-py bg-body landing-faq" id="landingFAQ">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">سوالات</span>
+            </div>
+            <h3 class="text-center mb-3">
+                <span class="section-title">سوالات پرتکرار</span>
+                کاربران ما
+            </h3>
+            <p class="text-center mb-5 pb-3">برای یافتن پاسخ سوالات خود، آیتم های زیر را بررسی کنید.</p>
+            <div class="row gy-5">
+                <div class="col-lg-5">
+                    <div class="text-center">
+                        <img alt="" class="faq-image" src="../../assets/img/front-pages/landing-page/faq-boy-with-logos.png"/>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card accordion-item active">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button aria-controls="accordionOne" aria-expanded="true" class="accordion-button" data-bs-target="#accordionOne" data-bs-toggle="collapse" type="button">
+                                    آیا لورم ایپسوم یک متن ساختگی نامفهوم است ؟
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="accordionOne">
+                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+
+                                <button aria-controls="accordionTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#accordionTwo" data-bs-toggle="collapse" type="button">
+                                    آیا لورم ایپسوم یک متن ساختگی نامفهوم است ؟
+                                </button>
+                            </h2>
+                            <div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="accordionTwo">
+                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button aria-controls="accordionThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#accordionThree" data-bs-toggle="collapse" type="button">
+                                    آیا لورم ایپسوم یک متن ساختگی نامفهوم است ؟
+                                </button>
+                            </h2>
+                            <div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="accordionThree">
+                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button aria-controls="accordionFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#accordionFour" data-bs-toggle="collapse" type="button">
+                                    آیا لورم ایپسوم یک متن ساختگی نامفهوم است ؟
+                                </button>
+                            </h2>
+                            <div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="accordionFour">
+                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button aria-controls="accordionFive" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#accordionFive" data-bs-toggle="collapse" type="button">
+                                    آیا لورم ایپسوم یک متن ساختگی نامفهوم است ؟
+                                </button>
+                            </h2>
+                            <div aria-labelledby="headingFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="accordionFive">
+                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ: End -->
+    <!-- CTA: Start -->
+    <section class="section-py landing-cta p-lg-0 pb-0" id="landingCTA">
+        <div class="container">
+            <div class="row align-items-center gy-5 gy-lg-0">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h6 class="h2 text-primary fw-bold mb-3">برای شروع آماده اید؟</h6>
+                    <p class="fw-medium mb-4">از دوره آزمایشی 14 روزه ما جهت کسب اطمینان استفاده کنید.</p>
+                    <a class="btn btn-lg btn-primary" href="payment-page.html">شروع کنید</a>
+                </div>
+                <div class="col-lg-6 pt-lg-5 text-center text-lg-end">
+                    <img alt="داشبورد cta" class="img-fluid" src="../../assets/img/front-pages/landing-page/cta-dashboard.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA: End -->
+    <!-- Contact Us: Start -->
+    <section class="section-py bg-body landing-contact" id="landingContact">
+        <div class="container">
+            <div class="text-center mb-3 pb-1">
+                <span class="badge bg-label-primary">ارتباط با ما</span>
+            </div>
+            <h3 class="text-center mb-3 fw-medium">
+                <span class="section-title">ارتباط مستقیم با تیم ما</span>
+            </h3>
+            <p class="text-center mb-4 mb-lg-5 pb-md-3">هر سوال یا نکته ای؟ فقط برای ما این پایین بنویس</p>
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="contact-img-box position-relative border p-2 h-100">
+                        <img alt="" class="contact-img w-100 scaleX-n1-rtl" src="../../assets/img/front-pages/landing-page/contact-customer-service.png"/>
+                        <div class="pt-3 px-4 pb-1">
+                            <div class="row gy-3 gx-md-4">
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="badge bg-label-primary rounded p-2-5 me-2">
+                                            <i class="ti ti-mail ti-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">ایمیل</p>
+                                            <h5 class="mb-0">
+                                                <a class="text-heading" href="mailto:example@gmail.com">example@gmail.com</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-12 col-xl-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="badge bg-label-success rounded p-2-5 me-2">
+                                            <i class="ti ti-phone-call ti-sm"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">تلفن</p>
+                                            <h5 class="mb-0">
+                                                <a class="text-heading" href="tel:+1234-568-963">
+                                                    <bdi>021 1020 3040</bdi>
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="mb-2">ارتباط با ما</h4>
+                            <p class="mb-4"> اگر صحبتی با ما دارید لطفا در باکس زیر بنویسید مثل انتقادات و پیشنهادات ، همکاری،
+                                <br class="d-none d-lg-block"/>
+                                شراکت، و ... ما در خدمت شما هستیم.
+                            </p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contact-form-fullname">نام و نام خانوادگی</label>
+                                        <input class="form-control" id="contact-form-fullname" placeholder="امیر" type="text"/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contact-form-email">ایمیل</label>
+                                        <input class="form-control" id="contact-form-email" placeholder="johndoe@gmail.com" type="text"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="contact-form-message">پیام</label>
+                                        <textarea class="form-control" id="contact-form-message" placeholder="پیام خود را بنویسید" rows="8"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">ارسال پیام</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us: End -->
+</div>
+<!-- / Sections:End -->
+<!-- Footer: Start -->
+<footer class="landing-footer bg-body footer-text">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row gx-0 gy-4 g-md-5">
+                <div class="col-lg-5">
+                    <a class="app-brand-link mb-4" href="landing-page.html">
+                        <span class="app-brand-logo demo">
+                            <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                                <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                                <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                                <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                            </svg>
+                        </span>
+                        <span class="app-brand-text demo footer-link fw-bold ms-2 ps-1">Vuexy</span>
+                    </a>
+                    <p class="footer-text footer-logo-description mb-4"> برنامه‌نویس ‌پسند ، حرفه‌ای و سفارشی ترین قالب مدیریت از نظر کاربران.</p>
+                    <form class="footer-form">
+                        <label class="small" for="footer-email">مشترک شدن در خبرنامه</label>
+                        <div class="d-flex mt-1">
+                            <input class="form-control rounded-0 rounded-start-bottom rounded-start-top" id="footer-email" placeholder="ایمیل شما" type="email"/>
+                            <button class="btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top" type="submit"> عضویت</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="footer-title mb-4">دموها</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a class="footer-link" href="../vertical-menu-template-no-customizer/" target="_blank">طرح منو عمودی</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="../horizontal-menu-template-no-customizer/" target="_blank">چیدمان افقی</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="../vertical-menu-template-bordered/" target="_blank">طرح کادر حاشیه دار</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="../vertical-menu-template-semi-dark/" target="_blank">طرح نیمه تاریک</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="../vertical-menu-template-dark/" target="_blank">طرح تاریک</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="footer-title mb-4">صفحات</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a class="footer-link" href="pricing-page.html">قیمت گذاری</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="payment-page.html">پرداخت
+                                <span class="badge rounded bg-primary ms-2">جدید</span>
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="checkout-page.html">ثبت سفارش</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="help-center-landing.html">مرکز پشتیبانی</a>
+                        </li>
+                        <li class="mb-3">
+                            <a class="footer-link" href="../vertical-menu-template-no-customizer/auth-login-cover.html" target="_blank">ورود / ثبت نام</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="footer-title mb-4">دانلود اپلیکیشن ها</h6>
+                    <a class="d-block footer-link mb-3 pb-2" href="javascript:void(0);">
+                        <img alt="نماد سیب" src="../../assets/img/front-pages/landing-page/apple-icon.png"/>
+                    </a>
+                    <a class="d-block footer-link" href="javascript:void(0);">
+                        <img alt="آیکون گوگل پلی" src="../../assets/img/front-pages/landing-page/google-play-icon.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom py-3">
+        <div class="container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start">
+            <div class="mb-2 mb-md-0">
+                <span class="footer-text">©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </span>
+                <span class="footer-text">
+                    , ارائه شده توسط
+                    <span class="text-danger byte-hover">بایت ‌مَستر</span>
+                    در سایت
+                    <a class="fw-medium" href="#support" target="_blank">راستچین</a>
+                </span>
+            </div>
+            <div>
+                <a class="footer-link me-3" href="#support" target="_blank">
+                    <img alt="نماد github" data-app-dark-img="front-pages/icons/github-dark.png" data-app-light-img="front-pages/icons/github-light.png" src="../../assets/img/front-pages/icons/github-light.png"/>
+                </a>
+                <a class="footer-link me-3" href="#support" target="_blank">
+                    <img alt="نماد فیس بوک" data-app-dark-img="front-pages/icons/facebook-dark.png" data-app-light-img="front-pages/icons/facebook-light.png" src="../../assets/img/front-pages/icons/facebook-light.png"/>
+                </a>
+                <a class="footer-link me-3" href="#support" target="_blank">
+                    <img alt="نماد توییتر" data-app-dark-img="front-pages/icons/twitter-dark.png" data-app-light-img="front-pages/icons/twitter-light.png" src="../../assets/img/front-pages/icons/twitter-light.png"/>
+                </a>
+                <a class="footer-link" href="#support" target="_blank">
+                    <img alt="آیکون گوگل" data-app-dark-img="front-pages/icons/instagram-dark.png" data-app-light-img="front-pages/icons/instagram-light.png" src="../../assets/img/front-pages/icons/instagram-light.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer: End -->
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="../../assets/vendor/libs/popper/popper.js"></script>
+<script src="../../assets/vendor/js/bootstrap.js"></script>
+<script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+<!-- endbuild -->
+<!-- Vendors JS -->
+<script src="../../assets/vendor/libs/nouislider/nouislider.js"></script>
+<script src="../../assets/vendor/libs/swiper/swiper.js"></script>
+<!-- Main JS -->
+<script src="../../assets/js/front-main.js"></script>
+<!-- Page JS -->
+<script src="../../assets/js/front-page-landing.js"></script>
+</body>
+
+</html>

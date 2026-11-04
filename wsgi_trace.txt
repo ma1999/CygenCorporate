@@ -1,0 +1,4 @@
+IN  PATH=/admin/users X_I18N_LANG=None
+OUT PATH=/admin/users X_I18N_LANG='en'
+IN  PATH=/en/admin/users X_I18N_LANG=None
+OUT PATH=/admin/users X_I18N_LANG='en'

@@ -1,0 +1,38 @@
+<section class="bg-gray-lighter object-wrap">
+    <div class="section-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h4 class="heading-decorated">{{ settings.heading }}</h4>
+                    <p>{{ settings.text }}</p>
+                    <div class="row row-30">
+                        {% for h in settings.highlights %}
+                        <div class="col-md-6 col-lg-12 col-xl-6">
+                            <article class="blurb blurb-minimal">
+                                <div class="unit flex-row unit-spacing-md">
+                                    <div class="unit-left"><div class="blurb-minimal__icon"><span class="icon {{ h.icon_class }}"></span></div></div>
+                                    <div class="unit-body">
+                                        <p class="blurb__title heading-6">{{ h.title }}</p>
+                                        <p>{{ h.text }}</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-12">
+                            {% for p in settings.progress_entries %}
+                            <div class="progress-linear progress-linear-modern">
+                                <div class="progress-header"><p>{{ p.label }}</p><span class="progress-value">{{ p.percent }}</span></div>
+                                <div class="progress-bar-linear-wrap"><div class="progress-bar-linear" style="width:{{ p.percent }}%;"></div></div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url({{ asset(settings.bg_image) }});"></div>
+</section>

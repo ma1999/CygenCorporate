@@ -1,0 +1,7 @@
+flask[async]
+mysql-connector-python
+python-dotenv
+pillow
+user-agents
+maxminddb
+jdatetime

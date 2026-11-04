@@ -1,0 +1,14 @@
+<section class="section-md text-center bg-default">
+    <div class="container">
+        <h4 class="heading-decorated">{{ settings.heading }}</h4>
+        <div class="row row-30">
+            {% for e in settings.entries %}
+            <div class="col-sm-6 col-md-3">
+                <figure class="box-icon-image">
+                    <a href="{{ e.url }}"><img src="{{ asset(e.image) }}" alt=""></a>
+                </figure>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

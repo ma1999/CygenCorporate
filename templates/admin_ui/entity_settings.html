@@ -1,0 +1,10 @@
+{% extends "admin_ui/layout.html" %}
+{% block content %}
+{% import "admin_ui/_sk.html" as sk %}
+<div id="entity-app" data-mode="settings" data-api="{{ api }}" data-page="{{ page }}" data-id="">
+  {{ sk.form() }}
+</div>
+{% endblock %}
+{% block page_js %}
+<script src="{{ asset('app/entity.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,27 @@
+<section class="bg-gray-lighter object-wrap">
+    <div class="section-lg">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-5">
+                    <h4 class="heading-decorated">{{ settings.heading }}</h4>
+                    <form class="rd-mailform rd-mailform_style-1" method="post" action="#" onsubmit="return false;">
+                        <div class="form-wrap">
+                            <input class="form-input" type="text" name="name">
+                            <label class="form-label rd-input-label">نام شما</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input" type="email" name="email">
+                            <label class="form-label rd-input-label">ایمیل شما</label>
+                        </div>
+                        <div class="form-wrap">
+                            <textarea class="form-input" name="message"></textarea>
+                            <label class="form-label rd-input-label">پیام شما</label>
+                        </div>
+                        <button class="button button-primary" type="submit">ارسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-left bg-image" style="background-image: url({{ asset(settings.bg_image) }});"></div>
+</section>

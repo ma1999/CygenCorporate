@@ -1,0 +1,191 @@
+{
+  "id": "design-70eb8f301b",
+  "theme": "conspro",
+  "page": "product-detail",
+  "name": "طرح پیش‌فرض",
+  "rows": [
+    {
+      "id": "row-72fa132d",
+      "boxes": [
+        {
+          "id": "box-02081c91",
+          "widget": "header",
+          "settings": {
+            "logo": "assets/logo.png",
+            "phone": "0912 345 67 89",
+            "email": "conspro@mail.com",
+            "cta_text": "ارتباط با ما",
+            "cta_url": "#",
+            "menu": [
+              {
+                "label": "خانه",
+                "url": "/"
+              },
+              {
+                "label": "درباره ما",
+                "url": "#"
+              },
+              {
+                "label": "خدمات",
+                "url": "#"
+              },
+              {
+                "label": "پروژه ها",
+                "url": "#"
+              },
+              {
+                "label": "فروشگاه",
+                "url": "#"
+              },
+              {
+                "label": "بلاگ",
+                "url": "#"
+              },
+              {
+                "label": "تماس با ما",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "row-cbc3a21a",
+      "boxes": [
+        {
+          "id": "box-100fd333",
+          "widget": "page_title_banner",
+          "settings": {
+            "bg_image": "assets/images/background/2.jpg",
+            "breadcrumb_home_label": "خانه",
+            "breadcrumb_current_label": "پروژه ها"
+          }
+        }
+      ]
+    },
+    {
+      "id": "row-760f1eba",
+      "boxes": [
+        {
+          "id": "box-c173eb90",
+          "widget": "product_main",
+          "settings": {
+            "placeholder_image": "assets/project-single.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "row-85911193",
+      "boxes": [
+        {
+          "id": "box-aeaacea9",
+          "widget": "related_projects",
+          "settings": {
+            "heading": "پروژه های مرتبط",
+            "limit": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "row-948f7414",
+      "boxes": [
+        {
+          "id": "box-3d578fb1",
+          "widget": "sponsors_subscribe",
+          "settings": {
+            "logos": [
+              {
+                "image": "assets/1.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/2.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/3.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/4.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/5.png",
+                "url": "#"
+              }
+            ],
+            "subscribe_heading": "مشترک شوید!",
+            "subscribe_text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده"
+          }
+        }
+      ]
+    },
+    {
+      "id": "row-06eb3bbf",
+      "boxes": [
+        {
+          "id": "box-089da040",
+          "widget": "footer",
+          "settings": {
+            "logo": "assets/footer-logo.png",
+            "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedin": "#",
+            "quick_links": [
+              {
+                "label": "خانه",
+                "url": "/"
+              },
+              {
+                "label": "درباره ما",
+                "url": "#"
+              },
+              {
+                "label": "خدمات",
+                "url": "#"
+              },
+              {
+                "label": "فروشگاه",
+                "url": "#"
+              },
+              {
+                "label": "بلاگ",
+                "url": "#"
+              },
+              {
+                "label": "تماس",
+                "url": "#"
+              }
+            ],
+            "address": "تبریز، چهارراه آبرسان، فلکه دانشگاه، برج بلور، طبقه 456",
+            "phone": "(880) 1723801729",
+            "email": "consproinc@gmail.com",
+            "hours": "9:00 ق.ظ - 5:00 ب.ظ جمعه تعطیل",
+            "copyright_text": "کلیه حقوق این وب‌سایت محفوظ است.",
+            "footer_nav": [
+              {
+                "label": "دسترسی به وب میل",
+                "url": "#"
+              },
+              {
+                "label": "قوانین و مقررات",
+                "url": "#"
+              },
+              {
+                "label": "حریم شخصی",
+                "url": "#"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-09-07 17:15:14",
+  "updated_at": "2026-09-07 17:15:14"
+}

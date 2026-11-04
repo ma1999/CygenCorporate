@@ -1,0 +1,23 @@
+<section class="section-md bg-default">
+    <div class="container">
+        <div class="row"><div class="col-sm-12 text-center"><h4 class="heading-decorated">{{ settings.heading }}</h4></div></div>
+        <div class="row row-60 news-posts-creek">
+            {% for e in settings.entries %}
+            <div class="col-sm-6 col-xl-4">
+                <article class="post-classic post-minimal">
+                    <img src="{{ asset(e.image) }}" alt="">
+                    <div class="post-classic-title"><h6><a href="{{ e.url }}">{{ e.title }}</a></h6></div>
+                    <div class="post-meta">
+                        <div class="group">
+                            <a href="{{ e.url }}"><time>{{ e.date }}</time></a>
+                            <a class="meta-author" href="{{ e.url }}">توسط {{ e.author }}</a>
+                        </div>
+                    </div>
+                    <div class="post-classic-body"><p>{{ e.text }}</p></div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<style>.news-posts-creek{display:flex;flex-wrap:wrap;}</style>

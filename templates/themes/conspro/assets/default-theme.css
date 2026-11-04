@@ -1,0 +1,167 @@
+/*Theme Color File*/
+
+.btn-style-one,
+.main-footer .subscribe-widget button,
+.main-footer .subscribe-widget .form-group input[type="submit"],
+.subscribe-section .subscribe-form .form-group input[type="submit"],
+.subscribe-section .subscribe-form .form-group button,
+.header-lower .main-menu .navigation > li:hover > a,
+.header-lower .main-menu .navigation > li.current > a,
+.header-lower .main-menu .navigation > li.current-menu-item > a,
+.main-header .info-box .quote-btn .get-quote-btn{
+	color:#ffffff;
+}
+
+a,
+.theme_color,
+.main-header .info-box .icon-box,
+.main-menu .navigation > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li > ul > li:hover > a,
+.services-block .inner-box .lower-content h3 a:hover,
+.default-service-item .content-inner .content .icon-box,
+.btn-style-two,
+.project-section .filters li:hover,
+.project-section .filters li.active,
+.services-block-two .inner-box h3 a:hover,
+.team-member .inner-box .content-column .content-inner h3 a:hover,
+.testimonial-block .inner-box .lower-box .rating .fa,
+.news-block .inner-box .lower-content .post-date,
+.news-block .inner-box .lower-content h3 a:hover,
+.services-block-three .inner-box .icon-box,
+.services-block-three .inner-box h3 a:hover,
+.services-block-four .inner-box .lower-content h3 a:hover,
+.gallery-block .inner-box .overlay-box .content h2 a:hover,
+.page-title .bread-crumb li a:hover,
+.fun-facts-section .count-outer,
+.error-search-box .form-group input:focus + button,
+.error-search-box .form-group button:hover,
+.services-block-five .inner-box .icon-box,
+.services-block-five .inner-box h3 a:hover,
+.services-block-five .inner-box .read-more:hover,
+.info-widget .inner h2,
+.sidebar-brochure .brochure .icon,
+.gallery-section .filters .filter.active,
+.gallery-section .filters .filter:hover,
+.shop-item .inner-box .lower-content h3 a:hover,
+.blog-cat li a:hover,
+.sidebar .search-box .form-group button,
+.sidebar .related-posts .post a,
+.sidebar .related-posts .post a:hover,
+.sidebar .popular-posts .post a,
+.sidebar .popular-posts .post a:hover,
+.news-block-two .inner-box .lower-content .post-date,
+.news-block-two .inner-box .lower-content h3 a:hover,
+.news-block-two .inner-box .lower-content .continue-reading,
+.default-service-item .content-inner .content h3 a:hover,
+.project-tab .product-tab-btns .p-tab-btn.active-btn{
+	color:#ffc11b;
+}
+
+a:hover,a:focus{
+	color: #E2A200;
+}
+
+/*Background Color*/
+
+.btn-style-one,
+.scroll-to-top:hover,
+.services-block .inner-box .lower-content .arrow-box,
+.main-header .info-box .quote-btn .get-quote-btn,
+.header-lower .main-menu .navigation > li:hover > a,
+.header-lower .main-menu .navigation > li.current > a,
+.header-lower .main-menu .navigation > li.current-menu-item > a,
+.main-header .sticky-header .main-menu .navigation > li:hover > a,
+.main-header .sticky-header .main-menu .navigation > li.current > a,
+.main-header .sticky-header .main-menu .navigation > li.current-menu-item > a,
+.fullwidth-section .outer-section .content-column .content-inner h2:after,
+.btn-style-two:hover,
+.counter-section .content-column .content-inner h2:after,
+.project-section h2:before,
+.sec-title h2:before,
+.services-block-two .inner-box .icon-box,
+.testimonial-block .quote-icon,
+.testimonial-section .owl-dots .owl-dot:hover span,
+.testimonial-section .owl-dots .owl-dot.active span,
+.news-section .owl-nav .owl-prev:hover,
+.news-section .owl-nav .owl-next:hover,
+.subscribe-section .subscribe-form .form-group input[type="submit"],
+.subscribe-section .subscribe-form .form-group button,
+.services-block-four .inner-box .lower-content .arrow-box,
+.gallery-block .inner-box .overlay-box .content h2:before,
+.call-to-action,
+.sidebar .sidebar-category .list li a:hover,
+.sidebar .sidebar-category .list li.current a,
+.sidebar-testimonial .owl-dots .owl-dot.active span,
+.sidebar-testimonial .owl-dots .owl-dot:hover span,
+.default-gallery-item .inner-box .overlay-box .content,
+.project-single-section .inner-box .project-info,
+.drop-list-one .dropdown-menu li:hover > a,
+.range-slider-one .ui-slider .ui-slider-range,
+.sidebar .popular-tags a:hover,
+.styled-pagination li a:hover,
+.styled-pagination li a.active,
+.range-slider-one .slider-header .title .filter-btn:hover,
+.post-share-options .tags a:hover,
+.social-icon-three a:hover{
+	background-color:#ffc11b;
+}
+
+/*Border Color*/
+
+.main-menu .navigation > li > ul,
+.main-menu .navigation > li > ul > li > ul,
+.btn-style-two,
+.btn-style-two:hover,
+.news-section .owl-nav .owl-prev:hover,
+.news-section .owl-nav .owl-next:hover,
+.subscribe-section .subscribe-form .form-group input[type="text"]:focus,
+.subscribe-section .subscribe-form .form-group input[type="email"]:focus,
+.error-search-box .form-group input:focus,
+.sidebar .search-box .form-group input:focus,
+.sidebar .popular-tags a:hover,
+.news-block-two .inner-box .lower-content .text blockquote,
+.social-icon-three a:hover,
+.comment-form .form-group input[type="text"]:focus,
+.comment-form .form-group input[type="email"]:focus,
+.comment-form .form-group textarea:focus,
+.contact-form .form-group input[type="text"]:focus,
+.contact-form .form-group input[type="password"]:focus,
+.contact-form .form-group input[type="tel"]:focus,
+.contact-form .form-group input[type="email"]:focus,
+.contact-form .form-group select:focus,
+.contact-form .form-group textarea:focus,
+.main-header .search-box-outer .dropdown-menu,
+.main-header .search-panel input:focus,
+.main-header .search-panel select:focus{
+	border-color:#ffc11b;
+}
+
+/*RGBA Color*/
+
+.gallery-item .overlay-box{
+	background-color:rgba(255,193,27,0.80);
+}
+
+@media only screen and (max-width: 767px){
+	.main-menu .navbar-header .navbar-toggle{
+		border-color:#ffc11b;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle,
+	.main-menu .navbar-collapse > .navigation,
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > a:hover,
+	.main-menu .navbar-collapse > .navigation > li > a:active,
+	.main-menu .navbar-collapse > .navigation > li > a:focus,
+	.main-menu .navbar-collapse > .navigation > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li.current > a,
+	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
+		background-color:#ffc11b;
+	}
+}

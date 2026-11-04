@@ -1,0 +1,28 @@
+<section class="section-lg bg-default text-center">
+    <div class="container">
+        <h4 class="heading-decorated">{{ settings.heading }}</h4>
+        <div class="row row-30">
+            {% for p in projects_products %}
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+                <div class="thumb-creative">
+                    <div class="thumb-creative__inner">
+                        <div class="thumb-creative__front">
+                            <figure class="thumb-creative__image-wrap"><img class="thumb-creative__image" src="{{ p.image_url or asset('assets/project-1-480x361.jpg') }}" alt="{{ p.name }}"></figure>
+                            <div class="thumb-creative__content"><h6>{{ p.product_category_name or '' }}</h6></div>
+                        </div>
+                        <div class="thumb-creative__back">
+                            <figure class="thumb-creative__image-wrap"><img class="thumb-creative__image" src="{{ p.image_url or asset('assets/project-1-480x361.jpg') }}" alt="{{ p.name }}"></figure>
+                            <div class="thumb-creative__content">
+                                <h6 class="thumb-creative__title"><a href="/product/{{ p.slug }}">{{ p.name }}</a></h6>
+                                <a class="button button-link" href="/product/{{ p.slug }}">مشاهده پروژه</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="col-12"><p>هنوز محصول/پروژه‌ای ثبت نشده است.</p></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

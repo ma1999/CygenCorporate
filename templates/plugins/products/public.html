@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="bg-white rounded-xl shadow p-6">
+  <h1 class="text-2xl font-bold mb-2">{{ product.name }}</h1>
+  {% if product.old_price %}
+    <p class="text-gray-400 line-through">{{ product.old_price }}</p>
+  {% endif %}
+  <p class="text-xl text-indigo-600 font-bold mb-4">{{ product.price }}</p>
+  <p class="mb-2 {{ 'text-green-600' if product.stock > 0 else 'text-red-600' }}">
+    {{ 'موجود' if product.stock > 0 else 'ناموجود' }} ({{ product.stock }})
+  </p>
+  <div class="prose max-w-none mb-6">{{ product.description|safe }}</div>
+
+  {% if product.images %}
+  <div class="grid grid-cols-3 md:grid-cols-5 gap-3">
+    {% for img in product.images %}
+      <img src="{{ img.url }}" alt="{{ img.alt }}" title="{{ img.alt }}"
+           class="w-full h-32 object-cover rounded-lg">
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<script type="application/ld+json">{{ schema_json|safe }}</script>
+{% endblock %}

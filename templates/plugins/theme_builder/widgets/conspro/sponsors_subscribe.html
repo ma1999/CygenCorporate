@@ -1,0 +1,38 @@
+<!--Default Section-->
+<section class="default-section grey-bg">
+    <div class="auto-container">
+        <div class="sponsors-section">
+            <div class="auto-container">
+                <div class="carousel-outer">
+                    <ul class="sponsors-carousel owl-carousel owl-theme">
+                        {% for logo in settings.logos %}
+                        <li><div class="image-box"><a href="{{ logo.url }}"><img src="{{ asset(logo.image) }}" alt=""></a></div></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-section">
+            <h2>{{ settings.subscribe_heading }}</h2>
+            <div class="text">{{ settings.subscribe_text }}</div>
+            <div class="subscribe-form">
+                <form method="post" action="#" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="ایمیل خود را وارد کنید" required class="text-left" dir="ltr">
+                        <button type="submit" class="theme-btn"><span class="icon fa fa-angle-left"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+(function(){
+    if (window.jQuery) {
+        jQuery(function($){
+            $('.sponsors-carousel').owlCarousel({ items: 5, loop: true, margin: 20, rtl: true, autoplay: true });
+        });
+    }
+})();
+</script>
+<!--End Default Section-->

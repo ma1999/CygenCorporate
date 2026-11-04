@@ -1,0 +1,12 @@
+{% extends "admin_ui/layout.html" %}
+{% block content %}
+{% import "admin_ui/_sk.html" as sk %}
+<div id="page-app" data-page="{{ page }}" data-params='{{ (params or {})|tojson }}'>
+  {% if page == 'dashboard' %}{{ sk.cards(4) }}{{ sk.card_table(4, 3) }}{% else %}{{ sk.card_table(6, 4) }}{% endif %}
+</div>
+{% endblock %}
+{% block page_js %}
+<script src="{{ asset('app/pages-core.js') }}"></script>
+{% if script %}<script src="{{ asset('app/' ~ script ~ '.js') }}"></script>{% endif %}
+<script src="{{ asset('app/runner.js') }}"></script>
+{% endblock %}

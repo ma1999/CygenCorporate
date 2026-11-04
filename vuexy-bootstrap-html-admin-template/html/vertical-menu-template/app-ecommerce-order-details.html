@@ -1,0 +1,2228 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="../../assets/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>تجارت الکترونیک - جزئیات سفارش | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="../../assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!-- Icons -->
+    <link href="../../assets/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="../../assets/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="../../assets/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="../../assets/css/demo.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="../../assets/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/sweetalert2/sweetalert2.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/select2/select2.css" rel="stylesheet"/>
+    <link href="../../assets/vendor/libs/@form-validation/form-validation.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../../assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../assets/js/config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="../../assets/css/rtl.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <svg fill="none" height="22" viewBox="0 0 32 22" width="32" xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z" fill="#7367F0" fill-rule="evenodd"/>
+                            <path clip-rule="evenodd" d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z" fill="#161616" fill-rule="evenodd" opacity="0.06"/>
+                            <path clip-rule="evenodd" d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z" fill="#7367F0" fill-rule="evenodd"/>
+                        </svg>
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- Dashboards -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                        <div data-i18n="Dashboards">داشبورد‌ها</div>
+                        <div class="badge bg-primary rounded-pill ms-auto">5</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="index.html">
+                                <div data-i18n="Analytics">آمار و گزارشات</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="dashboards-crm.html">
+                                <div data-i18n="CRM">ارتباط با مشتری (CRM)</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-ecommerce-dashboard.html">
+                                <div data-i18n="eCommerce">تجارت الکترونیک</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-logistics-dashboard.html">
+                                <div data-i18n="Logistics">حمل و نقل</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-academy-dashboard.html">
+                                <div data-i18n="Academy">آکادمی</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Layouts -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                        <div data-i18n="Layouts">طرح‌ها</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-collapsed-menu.html">
+                                <div data-i18n="Collapsed menu">منو جمع شده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar.html">
+                                <div data-i18n="Content navbar">نوار ناوبری محتوا</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar-with-sidebar.html">
+                                <div data-i18n="Content nav + Sidebar">ناوبری محتوا + سایدبار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../horizontal-menu-template" target="_blank">
+                                <div data-i18n="Horizontal">منو افقی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-menu.html">
+                                <div data-i18n="Without menu">بدون منو</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-navbar.html">
+                                <div data-i18n="Without navbar">بدون نوار ناوبری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-fluid.html">
+                                <div data-i18n="Fluid">محتوای تمام عرض</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-container.html">
+                                <div data-i18n="Container">دربرگیرنده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-blank.html">
+                                <div data-i18n="Blank">صفحه خالی</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Front Pages -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-files"></i>
+                        <div data-i18n="Front Pages">صفحات سایت</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/landing-page.html" target="_blank">
+                                <div data-i18n="Landing">لندینگ</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/pricing-page.html" target="_blank">
+                                <div data-i18n="Pricing">قیمت گذاری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/payment-page.html" target="_blank">
+                                <div data-i18n="Payment">پرداخت</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/checkout-page.html" target="_blank">
+                                <div data-i18n="Checkout">ثبت سفارش</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/help-center-landing.html" target="_blank">
+                                <div data-i18n="Help Center">مرکز پشتیبانی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="../front-pages/help-center-article.html" target="_blank">
+                                <div data-i18n="Help Learn">صفحه آموزش</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Apps & Pages -->
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text" data-i18n="Apps & Pages">برنامه‌ها و صفحات</span>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="app-email.html">
+                        <i class="menu-icon tf-icons ti ti-mail"></i>
+                        <div data-i18n="Email">ایمیل</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="app-chat.html">
+                        <i class="menu-icon tf-icons ti ti-messages"></i>
+                        <div data-i18n="Chat">پیامرسان</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-calendar"></i>
+                        <div data-i18n="Calendar">تقویم</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-calendar.html">
+                                <div data-i18n="Gregorian Calendar">تقویم میلادی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-calendar-jalali.html">
+                                <div data-i18n="Solar Calendar">تقویم شمسی</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="app-kanban.html">
+                        <i class="menu-icon tf-icons ti ti-layout-kanban"></i>
+                        <div data-i18n="Kanban">گردش‌کار</div>
+                    </a>
+                </li>
+                <!-- e-commerce-app menu start -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-shopping-cart"></i>
+                        <div data-i18n="eCommerce">تجارت الکترونیک</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-ecommerce-dashboard.html">
+                                <div data-i18n="Dashboard">داشبورد</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Products">محصولات</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-product-list.html">
+                                        <div data-i18n="Product List">لیست محصولات</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-product-add.html">
+                                        <div data-i18n="Add Product">افزودن محصول</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-category-list.html">
+                                        <div data-i18n="Category List">دسته‌بندی</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Order">سفارشات</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-order-list.html">
+                                        <div data-i18n="Order List">لیست سفارشات</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-order-details.html">
+                                        <div data-i18n="Order Details">جزئیات سفارش</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Customer">مشتریان</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-customer-all.html">
+                                        <div data-i18n="All Customers">لیست مشتریان</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                        <div data-i18n="Customer Details">نمایش مشتری</div>
+                                    </a>
+                                    <ul class="menu-sub">
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="app-ecommerce-customer-details-overview.html">
+                                                <div data-i18n="Overview">مرور‌کلی</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="app-ecommerce-customer-details-security.html">
+                                                <div data-i18n="Security">امنیت</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="app-ecommerce-customer-details-billing.html">
+                                                <div data-i18n="Address & Billing">آدرس و صورتحساب</div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="app-ecommerce-customer-details-notifications.html">
+                                                <div data-i18n="Notifications">اعلانات</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-ecommerce-manage-reviews.html">
+                                <div data-i18n="Manage Reviews">مدیریت بازخوردها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-ecommerce-referral.html">
+                                <div data-i18n="Referrals">باشگاه مشتریان</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Settings">تنظیمات</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-detail.html">
+                                        <div data-i18n="Store Details">فروشگاه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-payments.html">
+                                        <div data-i18n="Payments">پرداخت‌ها</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-checkout.html">
+                                        <div data-i18n="Checkout">ثبت سفارش</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-shipping.html">
+                                        <div data-i18n="Shipping & Delivery">حمل و نقل</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-locations.html">
+                                        <div data-i18n="Locations">آدرس‌ها</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-ecommerce-settings-notifications.html">
+                                        <div data-i18n="Notifications">نوتیفیکیشن</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- e-commerce-app menu end -->
+                <!-- Academy menu start -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-book"></i>
+                        <div data-i18n="Academy">آکادمی</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-academy-dashboard.html">
+                                <div data-i18n="Dashboard">داشبورد</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-academy-course.html">
+                                <div data-i18n="My Course">دوره‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-academy-course-details.html">
+                                <div data-i18n="Course Details">یک دوره</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Academy menu end -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-truck"></i>
+                        <div data-i18n="Logistics">حمل و نقل</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-logistics-dashboard.html">
+                                <div data-i18n="Dashboard">داشبورد</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-logistics-fleet.html">
+                                <div data-i18n="Fleet">ناوگان</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-file-dollar"></i>
+                        <div data-i18n="Invoice">صورتحساب</div>
+                        <div class="badge bg-danger rounded-pill ms-auto">4</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-invoice-list.html">
+                                <div data-i18n="List">لیست</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-invoice-preview.html">
+                                <div data-i18n="Preview">پیش‌فاکتور</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-invoice-edit.html">
+                                <div data-i18n="Edit">ویرایش</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-invoice-add.html">
+                                <div data-i18n="Add">افزودن</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-users"></i>
+                        <div data-i18n="Users">کاربران</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-user-list.html">
+                                <div data-i18n="List">لیست</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="View">نمایش</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-user-view-account.html">
+                                        <div data-i18n="Account">حساب</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-user-view-security.html">
+                                        <div data-i18n="Security">امنیت</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-user-view-billing.html">
+                                        <div data-i18n="Billing & Plans">اشتراک و روش‌پرداخت</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-user-view-notifications.html">
+                                        <div data-i18n="Notifications">اعلانات</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="app-user-view-connections.html">
+                                        <div data-i18n="Connections">سایرحساب‌ها</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-settings"></i>
+                        <div data-i18n="Roles & Permissions">نقش و سطح دسترسی</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-access-roles.html">
+                                <div data-i18n="Roles">نقش‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="app-access-permission.html">
+                                <div data-i18n="Permission">دسترسی‌ها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-file"></i>
+                        <div data-i18n="Pages">صفحات</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="User Profile">پروفایل حرفه‌ای</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-profile-user.html">
+                                        <div data-i18n="Profile">پروفایل</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-profile-teams.html">
+                                        <div data-i18n="Teams">گروه‌ها</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-profile-projects.html">
+                                        <div data-i18n="Projects">پروژه‌ها</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-profile-connections.html">
+                                        <div data-i18n="Connections">همکاران</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Account Settings">تنظیمات حساب</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-account-settings-account.html">
+                                        <div data-i18n="Account">حساب</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-account-settings-security.html">
+                                        <div data-i18n="Security">امنیت</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-account-settings-billing.html">
+                                        <div data-i18n="Billing & Plans">اشتراک و ‌پرداخت</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-account-settings-notifications.html">
+                                        <div data-i18n="Notifications">اعلانات</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-account-settings-connections.html">
+                                        <div data-i18n="Connections">ارتباطات</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="pages-faq.html">
+                                <div data-i18n="FAQ">سوالات متداول</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="pages-pricing.html">
+                                <div data-i18n="Pricing">قیمت گذاری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Misc">دیگر صفحات</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-misc-error.html" target="_blank">
+                                        <div data-i18n="Error">خطا</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-misc-under-maintenance.html" target="_blank">
+                                        <div data-i18n="Under Maintenance">دردست تعمیر</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-misc-comingsoon.html" target="_blank">
+                                        <div data-i18n="Coming Soon">به‌زودی</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="pages-misc-not-authorized.html" target="_blank">
+                                        <div data-i18n="Not Authorized">غیرمجاز</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-lock"></i>
+                        <div data-i18n="Authentications">احراز هویت</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Login">ورود</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-login-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-login-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Register">عضویت</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-register-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-register-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-register-multisteps.html" target="_blank">
+                                        <div data-i18n="Multi-steps">چند مرحله‌ای</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Verify Email">تأیید ایمیل</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-verify-email-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-verify-email-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Reset Password">ریست پسورد</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-reset-password-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-reset-password-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Forgot Password">فراموشی پسورد</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-forgot-password-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-forgot-password-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Two Steps">تایید دومرحله‌ای</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-two-steps-basic.html" target="_blank">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="auth-two-steps-cover.html" target="_blank">
+                                        <div data-i18n="Cover">کاور</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-forms"></i>
+                        <div data-i18n="Wizard Examples">چند مرحله‌ای</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="wizard-ex-checkout.html">
+                                <div data-i18n="Checkout">ثبت سفارش</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="wizard-ex-property-listing.html">
+                                <div data-i18n="Property Listing">درخواست ملک</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="wizard-ex-create-deal.html">
+                                <div data-i18n="Create Deal">ایجاد معامله</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="modal-examples.html">
+                        <i class="menu-icon tf-icons ti ti-square"></i>
+                        <div data-i18n="Modal Examples">نمونه‌های مُدال</div>
+                    </a>
+                </li>
+                <!-- Components -->
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text" data-i18n="Components">امکانات</span>
+                </li>
+                <!-- Cards -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-id"></i>
+                        <div data-i18n="Cards">کارت‌ها</div>
+                        <div class="badge bg-primary rounded-pill ms-auto">5</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="cards-basic.html">
+                                <div data-i18n="Basic">پایه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="cards-advance.html">
+                                <div data-i18n="Advance">پیشرفته</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="cards-statistics.html">
+                                <div data-i18n="Statistics">آمار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="cards-analytics.html">
+                                <div data-i18n="Analytics">آنالیز</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="cards-actions.html">
+                                <div data-i18n="Actions">عملیات</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- User interface -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0)">
+                        <i class="menu-icon tf-icons ti ti-color-swatch"></i>
+                        <div data-i18n="User interface">رابط کاربری</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-accordion.html">
+                                <div data-i18n="Accordion">آکاردئون</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-alerts.html">
+                                <div data-i18n="Alerts">هشدارها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-badges.html">
+                                <div data-i18n="Badges">برچسب‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-buttons.html">
+                                <div data-i18n="Buttons">کلیدها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-carousel.html">
+                                <div data-i18n="Carousel">اسلایدر</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-collapse.html">
+                                <div data-i18n="Collapse">بازشونده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-dropdowns.html">
+                                <div data-i18n="Dropdowns">پاپ‌آپ منو</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-footer.html">
+                                <div data-i18n="Footer">فـوتر</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-list-groups.html">
+                                <div data-i18n="List Groups">لیست گروهی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-modals.html">
+                                <div data-i18n="Modals">مُدال‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-navbar.html">
+                                <div data-i18n="Navbar">تولبار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-offcanvas.html">
+                                <div data-i18n="Offcanvas">کشوی کناری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-pagination-breadcrumbs.html">
+                                <div data-i18n="Pagination & Breadcrumbs">صفحه‌بندی و مسیر</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-progress.html">
+                                <div data-i18n="Progress">نوار پیشرفت</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-spinners.html">
+                                <div data-i18n="Spinners">لودینگ‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-tabs-pills.html">
+                                <div data-i18n="Tabs & Pills">تب‌ها و برگ‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-toasts.html">
+                                <div data-i18n="Toasts">توئستر</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-tooltips-popovers.html">
+                                <div data-i18n="Tooltips & Popovers">پاپ‌آپ راهنما</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="ui-typography.html">
+                                <div data-i18n="Typography">تایپوگرافی</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Extended components -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0)">
+                        <i class="menu-icon tf-icons ti ti-components"></i>
+                        <div data-i18n="Extended UI">طراحی سفارشی</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-avatar.html">
+                                <div data-i18n="Avatar">آواتار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-blockui.html">
+                                <div data-i18n="BlockUI">قفل صفحه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-drag-and-drop.html">
+                                <div data-i18n="Drag & Drop">کشیدن و رهاکردن</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-media-player.html">
+                                <div data-i18n="Media Player">مدیاپلیر</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-perfect-scrollbar.html">
+                                <div data-i18n="Perfect Scrollbar">نوار اسکرول</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-star-ratings.html">
+                                <div data-i18n="Star Ratings">امتیاز ستاره‌ای</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-sweetalert2.html">
+                                <div data-i18n="SweetAlert2">پاپ‌آپ SweetAlert2</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-text-divider.html">
+                                <div data-i18n="Text Divider">جداکننده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link menu-toggle" href="javascript:void(0);">
+                                <div data-i18n="Timeline">خط زمانی</div>
+                            </a>
+                            <ul class="menu-sub">
+                                <li class="menu-item">
+                                    <a class="menu-link" href="extended-ui-timeline-basic.html">
+                                        <div data-i18n="Basic">پایه</div>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="menu-link" href="extended-ui-timeline-fullscreen.html">
+                                        <div data-i18n="Fullscreen">تمام صفحه</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-tour.html">
+                                <div data-i18n="Tour">تور راهنما</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-treeview.html">
+                                <div data-i18n="Treeview">نمای درختی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="extended-ui-misc.html">
+                                <div data-i18n="Miscellaneous">سایرموارد</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Icons -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0)">
+                        <i class="menu-icon tf-icons ti ti-brand-tabler"></i>
+                        <div data-i18n="Icons">آیکن‌ها</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="icons-tabler.html">
+                                <div data-i18n="Tabler">آیکن‌های Tabler</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="icons-font-awesome.html">
+                                <div data-i18n="Fontawesome">آیکن‌های Fontawesome</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Forms & Tables -->
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text" data-i18n="Forms & Tables">فرم‌ها و جداول</span>
+                </li>
+                <!-- Forms -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-toggle-left"></i>
+                        <div data-i18n="Form Elements">المان‌های فرم</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-basic-inputs.html">
+                                <div data-i18n="Basic Inputs">اینپوت‌های پایه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-input-groups.html">
+                                <div data-i18n="Input groups">اینپوت گروپ</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-custom-options.html">
+                                <div data-i18n="Custom Options">گزینه‌های سفارشی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-editors.html">
+                                <div data-i18n="Editors">ویرایشگر متن</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-file-upload.html">
+                                <div data-i18n="File Upload">آپلود فایل</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-pickers.html">
+                                <div data-i18n="Pickers">انتخابگر تاریخ و رنگ</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-pickers-jalali.html">
+                                <div data-i18n="Solar Date Pickers">انتخابگر تاریخ شمسی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-selects.html">
+                                <div data-i18n="Select & Tags">انتخابگر گزینه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-sliders.html">
+                                <div data-i18n="Sliders">انتخابگر بازه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-switches.html">
+                                <div data-i18n="Switches">سوئیچ‌ها</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="forms-extras.html">
+                                <div data-i18n="Extras">سایر موارد</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-layout-navbar"></i>
+                        <div data-i18n="Form Layouts">چیدمان فرم</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="form-layouts-vertical.html">
+                                <div data-i18n="Vertical Form">فرم عمودی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="form-layouts-horizontal.html">
+                                <div data-i18n="Horizontal Form">فرم افقی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="form-layouts-sticky.html">
+                                <div data-i18n="Sticky Actions">سربرگ چسبنده</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-text-wrap-disabled"></i>
+                        <div data-i18n="Form Wizard">فرم مرحله‌ای</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="form-wizard-numbered.html">
+                                <div data-i18n="Numbered">شماره‌دار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="form-wizard-icons.html">
+                                <div data-i18n="Icons">آیکن‌ها</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="form-validation.html">
+                        <i class="menu-icon tf-icons ti ti-checkbox"></i>
+                        <div data-i18n="Form Validation">اعتبارسنجی فرم</div>
+                    </a>
+                </li>
+                <!-- Tables -->
+                <li class="menu-item">
+                    <a class="menu-link" href="tables-basic.html">
+                        <i class="menu-icon tf-icons ti ti-table"></i>
+                        <div data-i18n="Tables">جداول</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-layout-grid"></i>
+                        <div data-i18n="Datatables">جداول داده‌ای</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="tables-datatables-basic.html">
+                                <div data-i18n="Basic">پایه</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="tables-datatables-advanced.html">
+                                <div data-i18n="Advanced">پیشرفته</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="tables-datatables-extensions.html">
+                                <div data-i18n="Extensions">ویژگی‌های خاص</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Charts & Maps -->
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text" data-i18n="Charts & Maps">نمودارها و نقشه‌ها</span>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="javascript:void(0);">
+                        <i class="menu-icon tf-icons ti ti-chart-pie"></i>
+                        <div data-i18n="Charts">نمودارها</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="charts-apex.html">
+                                <div data-i18n="Apex Charts">نمودارهای Apex</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="charts-chartjs.html">
+                                <div data-i18n="ChartJS">نمودارهای JS</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="maps-leaflet.html">
+                        <i class="menu-icon tf-icons ti ti-map"></i>
+                        <div data-i18n="Leaflet Maps">نقشه‌های Leaflet</div>
+                    </a>
+                </li>
+                <!-- Misc -->
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text" data-i18n="Misc">سایر</span>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#support-theme" target="_blank">
+                        <i class="menu-icon tf-icons ti ti-lifebuoy"></i>
+                        <div data-i18n="Support">پشتیبانی</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/" target="_blank">
+                        <i class="menu-icon tf-icons ti ti-file-description"></i>
+                        <div data-i18n="Documentation">مستندات فنی</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Language -->
+                        <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-language rounded-circle ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" data-language="fa" data-text-direction="rtl" href="javascript:void(0);">
+                                        <span class="align-middle">فارسی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="en" data-text-direction="ltr" href="javascript:void(0);">
+                                        <span class="align-middle">انگلیسی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="fr" data-text-direction="ltr" href="javascript:void(0);">
+                                        <span class="align-middle">فرانسوی</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="ar" data-text-direction="rtl" href="javascript:void(0);">
+                                        <span class="align-middle">عربي</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-language="de" data-text-direction="ltr" href="javascript:void(0);">
+                                        <span class="align-middle">آلمانی</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Language -->
+                        <!-- Style Switcher -->
+                        <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-md"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                                <li>
+                                    <a class="dropdown-item" data-theme="light" href="javascript:void(0);">
+                                        <span class="align-middle">
+                                            <i class="ti ti-sun me-2"></i>
+                                            روز
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-theme="dark" href="javascript:void(0);">
+                                        <span class="align-middle">
+                                            <i class="ti ti-moon me-2"></i>
+                                            شب
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" data-theme="system" href="javascript:void(0);">
+                                        <span class="align-middle">
+                                            <i class="ti ti-device-desktop me-2"></i>
+                                            سیستم
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- / Style Switcher-->
+                        <!-- Quick links  -->
+                        <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-layout-grid-add ti-md"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end py-0">
+                                <div class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">میانبرها</h5>
+                                        <a class="dropdown-shortcuts-add text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="افزودن میانبر">
+                                            <i class="ti ti-sm ti-apps"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-shortcuts-list scrollable-container">
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-calendar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-calendar.html">تقویم</a>
+                                            <small class="text-muted mb-0">قرارهای ملاقات</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-file-invoice fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-invoice-list.html">صورتحساب‌</a>
+                                            <small class="text-muted mb-0">مدیریت پرداخت‌ها</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-users fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-user-list.html">مشتریان</a>
+                                            <small class="text-muted mb-0">مدیریت کاربران</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-lock fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-access-roles.html">سطح دسترسی</a>
+                                            <small class="text-muted mb-0">موارد امنیتی</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-chart-bar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="index.html">داشبورد</a>
+                                            <small class="text-muted mb-0">گزارش آماری</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-settings fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-account-settings-account.html">تنظیمات</a>
+                                            <small class="text-muted mb-0">مدیریت سیستم</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-help fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-faq.html">مرکز پشتیبانی</a>
+                                            <small class="text-muted mb-0">سوالات متداول و راهنما</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-square fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="modal-examples.html">مُـدال‌ها</a>
+                                            <small class="text-muted mb-0">پاپ‌آپ‌های کاربردی</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Quick links -->
+                        <!-- Notification -->
+                        <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-bell ti-md"></i>
+                                <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end py-0">
+                                <li class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">اعلانات</h5>
+                                        <a class="dropdown-notifications-all text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="همه خوانده شده">
+                                            <i class="ti ti-mail-opened fs-4"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-notifications-list scrollable-container">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">تبریک به شما 🎉</h6>
+                                                    <p class="mb-1">نشان برترین فروشنده ماه رو گرفتید</p>
+                                                    <small class="text-muted">الان</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-danger">ن‌م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">نوید محمدزاده</h6>
+                                                    <p class="mb-1">درخواست شمارا پذیرفت.</p>
+                                                    <small class="text-muted">1 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/2.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از بهاره ✉️</h6>
+                                                    <p class="mb-1">شما یک پیام جدید از بهاره افشاری دارید</p>
+                                                    <small class="text-muted">12 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-shopping-cart"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ایول! سفارش جدید داری 🛒</h6>
+                                                    <p class="mb-1">شرکت یلدا سفارشی جدید ثبت کرد</p>
+                                                    <small class="text-muted">امروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/9.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">اپلیکیشن بروزرسانی شد 🚀</h6>
+                                                    <p class="mb-1">پروژه شما باموفقیت آپدیت شد.</p>
+                                                    <small class="text-muted">دیروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-chart-pie"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">گزارش ماهانه دردسترس است</h6>
+                                                    <p class="mb-1">گزارش درآمد ماه شهریور آماده است</p>
+                                                    <small class="text-muted">2 روز قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/5.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ارسال درخواست همکاری</h6>
+                                                    <p class="mb-1">حسام درخواست همکاری فرستاد</p>
+                                                    <small class="text-muted">1 هفته قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/6.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از ترانه</h6>
+                                                    <p class="mb-1">شما یک پیام جدید دارید</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-warning">
+                                                            <i class="ti ti-alert-triangle"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">میزان مصرف CPU بالاست</h6>
+                                                    <p class="mb-1">درصد استفاده از CPU درحال حاضر 90%</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu-footer border-top">
+                                    <a class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center" href="javascript:void(0);">
+                                        نمایش همه اعلانات
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Notification -->
+                        <!-- User -->
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <div class="avatar avatar-online">
+                                    <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img alt class="h-auto rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="fw-semibold d-block mb-1">نوید محمدزاده</span>
+                                                <small class="text-muted">مدیرکل</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-profile-user.html">
+                                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                                        <span class="align-middle">پروفایل من</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <i class="ti ti-settings me-2 ti-sm"></i>
+                                        <span class="align-middle">تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-billing.html">
+                                        <span class="d-flex align-items-center align-middle">
+                                            <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+                                            <span class="flex-grow-1 align-middle">خریدها</span>
+                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-faq.html">
+                                        <i class="ti ti-help me-2 ti-sm"></i>
+                                        <span class="align-middle">سوالات متداول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-pricing.html">
+                                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                                        <span class="align-middle">قیمت گذاری</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                                        <i class="ti ti-logout me-2 ti-sm"></i>
+                                        <span class="align-middle">خروج از حساب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ User -->
+                    </ul>
+                </div>
+                <!-- Search Small Screens -->
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-2">
+                        <span class="text-muted fw-light">تجارت الکترونیک /</span>
+                        جزئیات سفارش
+                    </h4>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3">
+                        <div class="d-flex flex-column justify-content-center gap-2 gap-sm-0">
+                            <h5 class="mb-1 mt-3 d-flex flex-wrap gap-2 align-items-end">
+                                سفارش شماره 32543
+                                <span class="badge bg-label-success">پرداخت شده</span>
+                                <span class="badge bg-label-info">آماده تحویل</span>
+                            </h5>
+                            <p class="text-body">5:48 ، 17 شهریور 1402</p>
+                        </div>
+                        <div class="d-flex align-content-center flex-wrap gap-2">
+                            <button class="btn btn-label-danger delete-order">حذف سفارش</button>
+                        </div>
+                    </div>
+                    <!-- Order Details Table -->
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="card mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title m-0">سبد خرید</h5>
+                                    <h6 class="m-0">
+                                        <a href=" javascript:void(0)">ویرایش</a>
+                                    </h6>
+                                </div>
+                                <div class="card-datatable table-responsive">
+                                    <table class="datatables-order-details table border-top">
+                                        <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th class="w-50">محصولات</th>
+                                            <th class="w-25">قیمت</th>
+                                            <th class="w-25">تعداد</th>
+                                            <th>جمع</th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                    <div class="d-flex justify-content-end align-items-center m-3 mb-2 p-1">
+                                        <div class="order-calculations">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="w-px-100 text-heading">جمع سفارشات:</span>
+                                                <h6 class="mb-0">
+                                                    <bdi><svg class="toman" width="1rem" height="1rem">
+                                            <use xlink:href="#toman">
+                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                </symbol>
+                                            </use>
+                                        </svg>6398</bdi>
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="w-px-100 text-heading">تخفیف:</span>
+                                                <h6 class="mb-0">
+                                                    <bdi><svg class="toman" width="1rem" height="1rem">
+                                            <use xlink:href="#toman">
+                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                </symbol>
+                                            </use>
+                                        </svg>22</bdi>
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="w-px-100 text-heading">مالیات:</span>
+                                                <h6 class="mb-0">
+                                                    <bdi><svg class="toman" width="1rem" height="1rem">
+                                            <use xlink:href="#toman">
+                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                </symbol>
+                                            </use>
+                                        </svg>30</bdi>
+                                                </h6>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <h6 class="w-px-100 mb-0">جمع:</h6>
+                                                <h6 class="mb-0">
+                                                    <bdi><svg class="toman" width="1rem" height="1rem">
+                                            <use xlink:href="#toman">
+                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
+                                                </symbol>
+                                            </use>
+                                        </svg>6450</bdi>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h5 class="card-title m-0">فعالیت حمل و نقل</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="timeline pb-0 mb-0">
+                                        <li class="timeline-item timeline-item-transparent border-primary">
+                                            <span class="timeline-point timeline-point-primary"></span>
+                                            <div class="timeline-event">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">سفارش ثبت شد (شناسه سفارش: #32543)</h6>
+                                                    <span class="text-muted">سه شنبه 11:29 صبح</span>
+                                                </div>
+                                                <p class="mt-2">سفارش شما با موفقیت ثبت شد</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item timeline-item-transparent border-primary">
+                                            <span class="timeline-point timeline-point-primary"></span>
+                                            <div class="timeline-event">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">بارگیری</h6>
+                                                    <span class="text-muted">چهارشنبه 11:29 صبح</span>
+                                                </div>
+                                                <p class="mt-2">تحویل به پیک ارسال کالاها انجام شد</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item timeline-item-transparent border-primary">
+                                            <span class="timeline-point timeline-point-primary"></span>
+                                            <div class="timeline-event">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">درحال ارسال</h6>
+                                                    <span class="text-muted">پنجشنبه 11:29 صبح</span>
+                                                </div>
+                                                <p class="mt-2">پیک شروه به ارسال کالا کرد</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item timeline-item-transparent border-primary">
+                                            <span class="timeline-point timeline-point-primary"></span>
+                                            <div class="timeline-event">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">تحویل داده شد</h6>
+                                                    <span class="text-muted">شنبه 15:20 صبح</span>
+                                                </div>
+                                                <p class="mt-2">بسته به یک مرکز پردازش ، تهران رسید</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item timeline-item-transparent border-left-dashed">
+                                            <span class="timeline-point timeline-point-primary"></span>
+                                            <div class="timeline-event">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">برای تحویل ارسال شد</h6>
+                                                    <span class="text-muted">امروز 14:12 عصر</span>
+                                                </div>
+                                                <p class="mt-2">بسته به ماشین ارسال کالا تحویل داده شد</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item timeline-item-transparent border-transparent pb-0">
+                                            <span class="timeline-point timeline-point-secondary"></span>
+                                            <div class="timeline-event pb-0">
+                                                <div class="timeline-header">
+                                                    <h6 class="mb-0">تحویل داده شد</h6>
+                                                </div>
+                                                <p class="mt-2 mb-0">بسته با موفقیت به دست مشتری رسید</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h6 class="card-title m-0">اطلاعات مشتری</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-center mb-4">
+                                        <div class="avatar me-2">
+                                            <img alt="آواتار" class="rounded-circle" src="../../assets/img/avatars/1.png"/>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <a class="text-body text-nowrap" href="app-user-view-account.html">
+                                                <h6 class="mb-0">نوید محمدزاده</h6>
+                                            </a>
+                                            <small class="text-muted">شناسه مشتری: #58909</small>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-start align-items-center mb-4">
+                                        <span class="avatar rounded-circle bg-label-success me-2 d-flex align-items-center justify-content-center">
+                                            <i class="ti ti-shopping-cart ti-sm"></i>
+                                        </span>
+                                        <h6 class="text-body text-nowrap mb-0">12 سفارش</h6>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h6>اطلاعات تماس</h6>
+                                        <h6>
+                                            <a data-bs-target="#editUser" data-bs-toggle="modal" href=" javascript:void(0)">ویرایش</a>
+                                        </h6>
+                                    </div>
+                                    <p class="mb-1">ایمیل: Shamus889@yahoo.com</p>
+                                    <p class="mb-0">تلفن همراه:
+                                        <bdi>+1 (609) 972-22-22</bdi>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header d-flex justify-content-between">
+                                    <h6 class="card-title m-0">آدرس سفارش</h6>
+                                    <h6 class="m-0">
+                                        <a data-bs-target="#addNewAddress" data-bs-toggle="modal" href=" javascript:void(0)">ویرایش</a>
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-0">ایران ، اصفهان ، کاشان
+                                        <br/>
+                                        خیابان امیر کبیر
+                                        <br/>
+                                        کوچه ایکس ، پلاک 12345
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header d-flex justify-content-between">
+                                    <h6 class="card-title m-0">آدرس پرداخت</h6>
+                                    <h6 class="m-0">
+                                        <a data-bs-target="#addNewAddress" data-bs-toggle="modal" href=" javascript:void(0)">ویرایش</a>
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-4">ایران ، اصفهان ، کاشان
+                                        <br/>
+                                        خیابان امیر کبیر
+                                        <br/>
+                                        کوچه ایکس ، پلاک 12345
+                                    </p>
+                                    <h6 class="mb-0 pb-2">بلوبانک کارت</h6>
+                                    <p class="mb-0">شماره کارت:
+                                        <bdi>******4291</bdi>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Edit User Modal -->
+                    <div aria-hidden="true" class="modal fade" id="editUser" tabindex="-1">
+                        <div class="modal-dialog modal-lg modal-simple modal-edit-user">
+                            <div class="modal-content p-3 p-md-5">
+                                <div class="modal-body">
+                                    <button aria-label="بستن" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                                    <div class="text-center mb-4">
+                                        <h3 class="mb-2">ویرایش اطلاعات کاربر</h3>
+                                        <p class="text-muted">به روزرسانی اطلاعات کاربر یک ممیزی حریم خصوصی دریافت می کند.</p>
+                                    </div>
+                                    <form class="row g-3" id="editUserForm" onsubmit="return false">
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserFirstName">نام کوچک</label>
+                                            <input class="form-control" id="modalEditUserFirstName" name="modalEditUserFirstName" placeholder="امیر" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserLastName">نام خانوادگی</label>
+                                            <input class="form-control" id="modalEditUserLastName" name="modalEditUserLastName" placeholder="مقصودلو" type="text"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="modalEditUserName">نام کاربری</label>
+                                            <input class="form-control" id="modalEditUserName" name="modalEditUserName" placeholder="john.doe.007" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserEmail">ایمیل</label>
+                                            <input class="form-control" id="modalEditUserEmail" name="modalEditUserEmail" placeholder="example@domain.com" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserStatus">وضعیت</label>
+                                            <select aria-label="نمونه انتخاب پیش فرض" class="select2 form-select" id="modalEditUserStatus" name="modalEditUserStatus">
+                                                <option selected>وضعیت</option>
+                                                <option value="1">فعال</option>
+                                                <option value="2">غیر فعال</option>
+                                                <option value="3">معلق</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditTaxID">شناسه مالیاتی</label>
+                                            <input class="form-control modal-edit-tax-id" id="modalEditTaxID" name="modalEditTaxID" placeholder="123 456 7890" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserPhone">شماره تلفن</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">US (+1)</span>
+                                                <input class="form-control phone-number-mask" id="modalEditUserPhone" name="modalEditUserPhone" placeholder="202 555 0111" type="text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserLanguage">زبان</label>
+                                            <select class="select2 form-select" id="modalEditUserLanguage" multiple name="modalEditUserLanguage">
+                                                <option value="">انتخاب کنید</option>
+                                                <option selected value="english">انگلیسی</option>
+                                                <option value="spanish">اسپانیایی</option>
+                                                <option value="french">فرانسوی</option>
+                                                <option value="german">آلمانی</option>
+                                                <option value="dutch">هلندی</option>
+                                                <option value="hebrew">عبری</option>
+                                                <option value="sanskrit">سانسکریت</option>
+                                                <option value="hindi">هندی</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalEditUserCountry">کشور</label>
+                                            <select class="select2 form-select" data-allow-clear="true" id="modalEditUserCountry" name="modalEditUserCountry">
+                                                <option value="">انتخاب کنید</option>
+                                                <option value="Australia">استرالیا</option>
+                                                <option value="Bangladesh">بنگلادش</option>
+                                                <option value="Belarus">بلاروس</option>
+                                                <option value="Brazil">برزیل</option>
+                                                <option value="Canada">کانادا</option>
+                                                <option value="China">چین</option>
+                                                <option value="France">فرانسه</option>
+                                                <option value="Germany">آلمان</option>
+                                                <option value="India">هندوستان</option>
+                                                <option value="Indonesia">اندونزی</option>
+                                                <option value="Israel">اسرائيل</option>
+                                                <option value="Italy">ایتالیا</option>
+                                                <option value="Japan">ژاپن</option>
+                                                <option value="Korea">جمهوری کره</option>
+                                                <option value="Mexico">مکزیک</option>
+                                                <option value="Philippines">فیلیپین</option>
+                                                <option value="Russia">فدراسیون روسیه</option>
+                                                <option value="South Africa">آفریقای جنوبی</option>
+                                                <option value="Thailand">تایلند</option>
+                                                <option value="Turkey">ترکیه</option>
+                                                <option value="Ukraine">اوکراین</option>
+                                                <option value="United Arab Emirates">امارات متحده عربی</option>
+                                                <option value="United Kingdom">انگلستان</option>
+                                                <option value="United States">ایالات متحده</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="switch">
+                                                <input class="switch-input" type="checkbox"/>
+                                                <span class="switch-toggle-slider">
+                                                    <span class="switch-on"></span>
+                                                    <span class="switch-off"></span>
+                                                </span>
+                                                <span class="switch-label">به عنوان آدرس صورتحساب استفاده شود؟</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-primary me-sm-3 me-1" type="submit">ارسال</button>
+                                            <button aria-label="بستن" class="btn btn-label-secondary" data-bs-dismiss="modal" type="reset"> لغو</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Edit User Modal -->
+                    <!-- Add New Address Modal -->
+                    <div aria-hidden="true" class="modal fade" id="addNewAddress" tabindex="-1">
+                        <div class="modal-dialog modal-lg modal-simple modal-add-new-address">
+                            <div class="modal-content p-3 p-md-5">
+                                <div class="modal-body">
+                                    <button aria-label="بستن" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                                    <div class="text-center mb-4">
+                                        <h3 class="address-title mb-2">اضافه کردن آدرس جدید</h3>
+                                        <p class="text-muted address-subtitle">آدرس جدید برای تحویل سریع اضافه کنید</p>
+                                    </div>
+                                    <form class="row g-3" id="addNewAddressForm" onsubmit="return false">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-md mb-md-0 mb-3">
+                                                    <div class="form-check custom-option custom-option-icon">
+                                                        <label class="form-check-label custom-option-content" for="customRadioHome">
+                                                            <span class="custom-option-body">
+                                                                <svg fill="none" height="40" viewBox="0 0 41 40" width="41" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M24.25 33.75V23.75H16.75V33.75H6.75002V18.0469C6.7491 17.8733 6.78481 17.7015 6.85482 17.5426C6.92482 17.3838 7.02754 17.2415 7.15627 17.125L19.6563 5.76562C19.8841 5.5559 20.1825 5.43948 20.4922 5.43948C20.8019 5.43948 21.1003 5.5559 21.3281 5.76562L33.8438 17.125C33.9696 17.2438 34.0703 17.3866 34.1401 17.5449C34.2098 17.7032 34.2472 17.8739 34.25 18.0469V33.75H24.25Z" fill="currentColor" opacity="0.2"/>
+                                                                    <path d="M33.25 33.75C33.25 34.3023 33.6977 34.75 34.25 34.75C34.8023 34.75 35.25 34.3023 35.25 33.75H33.25ZM34.25 18.0469H35.25C35.25 18.0415 35.25 18.0361 35.2499 18.0307L34.25 18.0469ZM33.8437 17.125L34.5304 16.398C34.5256 16.3934 34.5207 16.389 34.5158 16.3845L33.8437 17.125ZM21.3281 5.76562L20.6509 6.50143L20.656 6.50611L21.3281 5.76562ZM19.6562 5.76562L20.3288 6.5057L20.3335 6.50141L19.6562 5.76562ZM7.15625 17.125L7.82712 17.8666L7.82878 17.8651L7.15625 17.125ZM6.75 18.0469H7.75001L7.74999 18.0416L6.75 18.0469ZM5.75 33.75C5.75 34.3023 6.19772 34.75 6.75 34.75C7.30228 34.75 7.75 34.3023 7.75 33.75H5.75ZM3 32.75C2.44772 32.75 2 33.1977 2 33.75C2 34.3023 2.44772 34.75 3 34.75V32.75ZM38 34.75C38.5523 34.75 39 34.3023 39 33.75C39 33.1977 38.5523 32.75 38 32.75V34.75ZM23.25 33.75C23.25 34.3023 23.6977 34.75 24.25 34.75C24.8023 34.75 25.25 34.3023 25.25 33.75H23.25ZM15.75 33.75C15.75 34.3023 16.1977 34.75 16.75 34.75C17.3023 34.75 17.75 34.3023 17.75 33.75H15.75ZM35.25 33.75V18.0469H33.25V33.75H35.25ZM35.2499 18.0307C35.2449 17.7243 35.1787 17.422 35.0551 17.1416L33.225 17.9481C33.2409 17.9844 33.2495 18.0235 33.2501 18.0631L35.2499 18.0307ZM35.0551 17.1416C34.9316 16.8612 34.7531 16.6084 34.5304 16.398L33.1571 17.852C33.1859 17.8792 33.209 17.9119 33.225 17.9481L35.0551 17.1416ZM34.5158 16.3845L22.0002 5.02514L20.656 6.50611L33.1717 17.8655L34.5158 16.3845ZM22.0053 5.02984C21.5929 4.6502 21.0528 4.43948 20.4922 4.43948V6.43948C20.551 6.43948 20.6076 6.46159 20.6509 6.50141L22.0053 5.02984ZM20.4922 4.43948C19.9316 4.43948 19.3915 4.6502 18.979 5.02984L20.3335 6.50141C20.3767 6.46159 20.4334 6.43948 20.4922 6.43948V4.43948ZM18.9837 5.02556L6.48371 16.3849L7.82878 17.8651L20.3288 6.50569L18.9837 5.02556ZM6.48538 16.3834C6.25236 16.5942 6.06642 16.8518 5.93971 17.1393L7.76988 17.9459C7.78318 17.9157 7.80268 17.8887 7.82712 17.8666L6.48538 16.3834ZM5.93971 17.1393C5.813 17.4269 5.74836 17.7379 5.75001 18.0521L7.74999 18.0416C7.74981 18.0087 7.75659 17.976 7.76988 17.9459L5.93971 17.1393ZM5.75 18.0469V33.75H7.75V18.0469H5.75ZM3 34.75H38V32.75H3V34.75ZM25.25 33.75V25H23.25V33.75H25.25ZM25.25 25C25.25 24.4033 25.013 23.831 24.591 23.409L23.1768 24.8232C23.2237 24.8701 23.25 24.9337 23.25 25H25.25ZM24.591 23.409C24.169 22.987 23.5967 22.75 23 22.75V24.75C23.0663 24.75 23.1299 24.7763 23.1768 24.8232L24.591 23.409ZM23 22.75H18V24.75H23V22.75ZM18 22.75C17.4033 22.75 16.831 22.9871 16.409 23.409L17.8232 24.8232C17.8701 24.7763 17.9337 24.75 18 24.75V22.75ZM16.409 23.409C15.9871 23.831 15.75 24.4033 15.75 25H17.75C17.75 24.9337 17.7763 24.8701 17.8232 24.8232L16.409 23.409ZM15.75 25V33.75H17.75V25H15.75Z" fill="currentColor"/>
+                                                                </svg>
+                                                                زمان تحویل
+                                                                <span class="custom-option-title">درب منزل</span>
+                                                                <small> (9 صبح تا 9 شب)</small>
+                                                            </span>
+                                                            <input checked class="form-check-input" id="customRadioHome" name="customRadioIcon" type="radio" value=""/>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md mb-md-0 mb-3">
+                                                    <div class="form-check custom-option custom-option-icon">
+                                                        <label class="form-check-label custom-option-content" for="customRadioOffice">
+                                                            <span class="custom-option-body">
+                                                                <svg fill="none" height="40" viewBox="0 0 41 40" width="41" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M22.75 33.75V6.25C22.75 5.91848 22.6183 5.60054 22.3839 5.36612C22.1495 5.1317 21.8315 5 21.5 5H6.5C6.16848 5 5.85054 5.1317 5.61612 5.36612C5.3817 5.60054 5.25 5.91848 5.25 6.25V33.75" fill="currentColor" fill-opacity="0.2"/>
+                                                                    <path d="M2.75 32.75C2.19772 32.75 1.75 33.1977 1.75 33.75C1.75 34.3023 2.19772 34.75 2.75 34.75V32.75ZM37.75 34.75C38.3023 34.75 38.75 34.3023 38.75 33.75C38.75 33.1977 38.3023 32.75 37.75 32.75V34.75ZM21.75 33.75C21.75 34.3023 22.1977 34.75 22.75 34.75C23.3023 34.75 23.75 34.3023 23.75 33.75H21.75ZM21.5 5V4V5ZM5.25 6.25H4.25H5.25ZM4.25 33.75C4.25 34.3023 4.69772 34.75 5.25 34.75C5.80228 34.75 6.25 34.3023 6.25 33.75H4.25ZM34.25 33.75C34.25 34.3023 34.6977 34.75 35.25 34.75C35.8023 34.75 36.25 34.3023 36.25 33.75H34.25ZM22.75 14C22.1977 14 21.75 14.4477 21.75 15C21.75 15.5523 22.1977 16 22.75 16V14ZM10.25 10.25C9.69772 10.25 9.25 10.6977 9.25 11.25C9.25 11.8023 9.69772 12.25 10.25 12.25V10.25ZM15.25 12.25C15.8023 12.25 16.25 11.8023 16.25 11.25C16.25 10.6977 15.8023 10.25 15.25 10.25V12.25ZM12.75 20.25C12.1977 20.25 11.75 20.6977 11.75 21.25C11.75 21.8023 12.1977 22.25 12.75 22.25V20.25ZM17.75 22.25C18.3023 22.25 18.75 21.8023 18.75 21.25C18.75 20.6977 18.3023 20.25 17.75 20.25V22.25ZM10.25 26.5C9.69772 26.5 9.25 26.9477 9.25 27.5C9.25 28.0523 9.69772 28.5 10.25 28.5V26.5ZM15.25 28.5C15.8023 28.5 16.25 28.0523 16.25 27.5C16.25 26.9477 15.8023 26.5 15.25 26.5V28.5ZM27.75 26.5C27.1977 26.5 26.75 26.9477 26.75 27.5C26.75 28.0523 27.1977 28.5 27.75 28.5V26.5ZM30.25 28.5C30.8023 28.5 31.25 28.0523 31.25 27.5C31.25 26.9477 30.8023 26.5 30.25 26.5V28.5ZM27.75 20.25C27.1977 20.25 26.75 20.6977 26.75 21.25C26.75 21.8023 27.1977 22.25 27.75 22.25V20.25ZM30.25 22.25C30.8023 22.25 31.25 21.8023 31.25 21.25C31.25 20.6977 30.8023 20.25 30.25 20.25V22.25ZM2.75 34.75H37.75V32.75H2.75V34.75ZM23.75 33.75V6.25H21.75V33.75H23.75ZM23.75 6.25C23.75 5.65326 23.5129 5.08097 23.091 4.65901L21.6768 6.07322C21.7237 6.12011 21.75 6.18369 21.75 6.25H23.75ZM23.091 4.65901C22.669 4.23705 22.0967 4 21.5 4V6C21.5663 6 21.6299 6.02634 21.6768 6.07322L23.091 4.65901ZM21.5 4H6.5V6H21.5V4ZM6.5 4C5.90326 4 5.33097 4.23705 4.90901 4.65901L6.32322 6.07322C6.37011 6.02634 6.4337 6 6.5 6V4ZM4.90901 4.65901C4.48705 5.08097 4.25 5.65326 4.25 6.25H6.25C6.25 6.1837 6.27634 6.12011 6.32322 6.07322L4.90901 4.65901ZM4.25 6.25V33.75H6.25V6.25H4.25ZM36.25 33.75V16.25H34.25V33.75H36.25ZM36.25 16.25C36.25 15.6533 36.013 15.081 35.591 14.659L34.1768 16.0732C34.2237 16.1201 34.25 16.1837 34.25 16.25H36.25ZM35.591 14.659C35.169 14.2371 34.5967 14 34 14V16C34.0663 16 34.1299 16.0263 34.1768 16.0732L35.591 14.659ZM34 14H22.75V16H34V14ZM10.25 12.25H15.25V10.25H10.25V12.25ZM12.75 22.25H17.75V20.25H12.75V22.25ZM10.25 28.5H15.25V26.5H10.25V28.5ZM27.75 28.5H30.25V26.5H27.75V28.5ZM27.75 22.25H30.25V20.25H27.75V22.25Z" fill="currentColor"/>
+                                                                </svg>
+                                                                زمان تحویل
+                                                                <span class="custom-option-title"> دفتر</span>
+                                                                <small> (9 صبح تا 5 بعد از ظهر)</small>
+                                                            </span>
+                                                            <input class="form-check-input" id="customRadioOffice" name="customRadioIcon" type="radio" value=""/>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressFirstName">نام کوچک</label>
+                                            <input class="form-control" id="modalAddressFirstName" name="modalAddressFirstName" placeholder="امیر" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressLastName">نام خانوادگی</label>
+                                            <input class="form-control" id="modalAddressLastName" name="modalAddressLastName" placeholder="مقصودلو" type="text"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="modalAddressCountry">کشور</label>
+                                            <select class="select2 form-select" data-allow-clear="true" id="modalAddressCountry" name="modalAddressCountry">
+                                                <option value="">انتخاب کنید</option>
+                                                <option value="Australia">استرالیا</option>
+                                                <option value="Bangladesh">بنگلادش</option>
+                                                <option value="Belarus">بلاروس</option>
+                                                <option value="Brazil">برزیل</option>
+                                                <option value="Canada">کانادا</option>
+                                                <option value="China">چین</option>
+                                                <option value="France">فرانسه</option>
+                                                <option value="Germany">آلمان</option>
+                                                <option value="India">هندوستان</option>
+                                                <option value="Indonesia">اندونزی</option>
+                                                <option value="Israel">اسرائيل</option>
+                                                <option value="Italy">ایتالیا</option>
+                                                <option value="Japan">ژاپن</option>
+                                                <option value="Korea">جمهوری کره</option>
+                                                <option value="Mexico">مکزیک</option>
+                                                <option value="Philippines">فیلیپین</option>
+                                                <option value="Russia">فدراسیون روسیه</option>
+                                                <option value="South Africa">آفریقای جنوبی</option>
+                                                <option value="Thailand">تایلند</option>
+                                                <option value="Turkey">ترکیه</option>
+                                                <option value="Ukraine">اوکراین</option>
+                                                <option value="United Arab Emirates">امارات متحده عربی</option>
+                                                <option value="United Kingdom">انگلستان</option>
+                                                <option value="United States">ایالات متحده</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="modalAddressAddress1">آدرس خط 1</label>
+                                            <input class="form-control" id="modalAddressAddress1" name="modalAddressAddress1" placeholder="12، بیزینس پارک" type="text"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label" for="modalAddressAddress2">آدرس خط 2</label>
+                                            <input class="form-control" id="modalAddressAddress2" name="modalAddressAddress2" placeholder="جاده مال" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressLandmark">راهنما</label>
+                                            <input class="form-control" id="modalAddressLandmark" name="modalAddressLandmark" placeholder="شماره کافه هارد راک" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressCity">شهر</label>
+                                            <input class="form-control" id="modalAddressCity" name="modalAddressCity" placeholder="لس آنجلس" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressLandmark">حالت</label>
+                                            <input class="form-control" id="modalAddressState" name="modalAddressState" placeholder="کالیفرنیا" type="text"/>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label class="form-label" for="modalAddressZipCode">کد پستی</label>
+                                            <input class="form-control" id="modalAddressZipCode" name="modalAddressZipCode" placeholder="99950" type="text"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="switch">
+                                                <input class="switch-input" type="checkbox"/>
+                                                <span class="switch-toggle-slider">
+                                                    <span class="switch-on"></span>
+                                                    <span class="switch-off"></span>
+                                                </span>
+                                                <span class="switch-label">به عنوان آدرس صورتحساب استفاده شود؟</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-primary me-sm-3 me-1" type="submit">ارسال</button>
+                                            <button aria-label="بستن" class="btn btn-label-secondary" data-bs-dismiss="modal" type="reset"> لغو</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Add New Address Modal -->
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                            <div> ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+
+                                </script>
+                                , ارائه شده توسط
+                                <span class="text-danger byte-hover">بایت ‌مَستر</span>
+                                در سایت
+                                <a class="fw-medium" href="#support" target="_blank">راستچین</a>
+                            </div>
+                            <div class="d-none d-lg-inline-block">
+                                <a class="footer-link me-4" href="#support" target="_blank">لایسنس</a>
+                                <a class="footer-link me-4" href="#support" target="_blank">قالب‌های بیشتر</a>
+                                <a class="footer-link me-4" href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/" target="_blank">مستندات</a>
+                                <a class="footer-link d-none d-sm-inline-block" href="#support-theme" target="_blank">پشتیبانی</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+<script src="../../assets/vendor/libs/popper/popper.js"></script>
+<script src="../../assets/vendor/js/bootstrap.js"></script>
+<script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+<script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+<script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+<script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="../../assets/vendor/js/menu.js"></script>
+<!-- endbuild -->
+<!-- Vendors JS -->
+<script src="../../assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="../../assets/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+<script src="../../assets/vendor/libs/cleavejs/cleave.js"></script>
+<script src="../../assets/vendor/libs/cleavejs/cleave-phone.js"></script>
+<script src="../../assets/vendor/libs/select2/select2.js"></script>
+<script src="../../assets/vendor/libs/select2/i18n/fa.js"></script>
+<script src="../../assets/vendor/libs/@form-validation/popular.js"></script>
+<script src="../../assets/vendor/libs/@form-validation/bootstrap5.js"></script>
+<script src="../../assets/vendor/libs/@form-validation/auto-focus.js"></script>
+<script src="../../assets/vendor/libs/sweetalert2/sweetalert2.js"></script>
+<!-- Main JS -->
+<script src="../../assets/js/main.js"></script>
+<!-- Page JS -->
+<script src="../../assets/js/app-ecommerce-order-details.js"></script>
+<script src="../../assets/js/modal-edit-user.js"></script>
+<script src="../../assets/js/modal-add-new-address.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{% extends "admin_ui/layout.html" %}
+{% block css %}
+<link rel="stylesheet" href="/assets/admin-ui/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+<link rel="stylesheet" href="/assets/admin-ui/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+{% endblock %}
+{% block content %}
+{% import "admin_ui/_sk.html" as sk %}
+<div id="entity-app" data-mode="{{ mode }}" data-api="/api{{ ent.path }}" data-page="{{ ent.path }}" data-id="{{ entity_id or '' }}">
+  {% if mode == 'list' %}{{ sk.card_table(8, 5) }}{% else %}{{ sk.form() }}{% endif %}
+</div>
+{% endblock %}
+{% block vendor_js %}
+<script src="/assets/admin-ui/vendor/libs/moment/moment.js"></script>
+<script src="/assets/admin-ui/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<script src="/assets/admin-ui/vendor/libs/datatables-bs5/i18n/fa.js"></script>
+{% endblock %}
+{% block page_js %}
+<script src="{{ asset('app/entity.js') }}"></script>
+{% endblock %}

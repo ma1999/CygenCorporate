@@ -1,0 +1,30 @@
+<!--Counter Section-->
+<section class="counter-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="counter-column col-md-6 col-sm-12 col-xs-12">
+                <div class="row clearfix grid-blocks">
+                    {% for item in settings.entries %}
+                    <div class="column count-box col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <div class="content">
+                                <div class="count-outer">
+                                    <span class="count-text" data-speed="2000" data-stop="{{ item.number }}">0</span>{{ item.suffix }}
+                                </div>
+                                <div class="counter-title">{{ item.label }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                <div class="content-inner">
+                    <h2>{{ settings.heading }}</h2>
+                    <div class="text"><p>{{ settings.text }}</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Counter Section-->

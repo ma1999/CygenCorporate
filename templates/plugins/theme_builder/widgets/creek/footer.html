@@ -1,0 +1,51 @@
+<section class="pre-footer-corporate bg-gray-darker">
+    <div class="container">
+        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+                <a class="brand" href="/"><img src="{{ asset(settings.logo) }}" alt=""></a>
+                <p>{{ settings.text }}</p>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                <h6>فهرست</h6>
+                <ul class="list-xxs list-primary">
+                    {% for link in settings.quick_links %}
+                    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+                <h6>تماس</h6>
+                <ul class="list-xs">
+                    <li><dl class="list-terms-minimal"><dt>آدرس</dt><dd>{{ settings.address }}</dd></dl></li>
+                    <li><dl class="list-terms-minimal"><dt>تلفن ها</dt><dd>
+                        <ul class="list-semicolon">
+                            {% for p in settings.phones %}<li><a href="tel:{{ p.phone }}"><span class="ltr-text d-inline-block">{{ p.phone }}</span></a></li>{% endfor %}
+                        </ul>
+                    </dd></dl></li>
+                    <li><dl class="list-terms-minimal"><dt>ایمیل</dt><dd><a class="link-primary" href="mailto:{{ settings.email }}">{{ settings.email }}</a></dd></dl></li>
+                    <li><dl class="list-terms-minimal"><dt>ساعات کاری</dt><dd>{{ settings.hours }}</dd></dl></li>
+                </ul>
+            </div>
+            {% if settings.map_embed_url %}
+            <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+                <div class="google-map-footer">
+                    <iframe src="{{ settings.map_embed_url }}" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+<footer class="footer-corporate bg-gray-darkest">
+    <div class="container">
+        <div class="footer-corporate__inner">
+            <p class="rights">{{ settings.copyright_text }}</p>
+            <ul class="list-inline-xxs">
+                {% if settings.facebook %}<li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="{{ settings.facebook }}"></a></li>{% endif %}
+                {% if settings.twitter %}<li><a class="icon icon-xxs icon-gray-darker fa fa-twitter" href="{{ settings.twitter }}"></a></li>{% endif %}
+                {% if settings.instagram %}<li><a class="icon icon-xxs icon-gray-darker fa fa-instagram" href="{{ settings.instagram }}"></a></li>{% endif %}
+                {% if settings.telegram %}<li><a class="icon icon-xxs icon-gray-darker fa fa-telegram" href="{{ settings.telegram }}"></a></li>{% endif %}
+            </ul>
+        </div>
+    </div>
+</footer>

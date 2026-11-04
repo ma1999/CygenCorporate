@@ -1,0 +1,473 @@
+{
+  "id": "design-8e1e8bc129",
+  "theme": "creek",
+  "page": "home",
+  "name": "طرح پیش‌فرض",
+  "rows": [
+    {
+      "boxes": [
+        {
+          "id": "box-2fdbbdb3",
+          "settings": {
+            "address": "تبریز، خیابان ولیعصر، ساختم",
+            "facebook": "#",
+            "instagram": "#",
+            "logo": "assets/logo-151x44.png",
+            "menu": [
+              {
+                "label": "خانه",
+                "url": "/"
+              },
+              {
+                "label": "درباره ما",
+                "url": "#"
+              },
+              {
+                "label": "خدمات",
+                "url": "#"
+              },
+              {
+                "label": "پروژه ها",
+                "url": "#"
+              },
+              {
+                "label": "بلاگ",
+                "url": "#"
+              },
+              {
+                "label": "تماس",
+                "url": "#"
+              }
+            ],
+            "phones": [
+              {
+                "phone": "65465131"
+              },
+              {
+                "phone": "5453"
+              }
+            ],
+            "telegram": "#",
+            "twitter": "#"
+          },
+          "widget": "header"
+        }
+      ],
+      "id": "row-50283817"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-d917d87d",
+          "settings": {
+            "slides": [
+              {
+                "button_text": "مشاهده پروژه های اخیر",
+                "button_url": "#",
+                "image": "assets/images/slider-slide-1-1920x1080.jpg",
+                "subtitle": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و",
+                "title": "از آغاز ت"
+              },
+              {
+                "button_text": "مشاهده پروژه های اخیر",
+                "button_url": "#",
+                "image": "assets/images/slider-slide-2-1920x1080.jpg",
+                "subtitle": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از",
+                "title": "تخفیف های تابستانی"
+              },
+              {
+                "button_text": "مشاهده پروژه های اخیر",
+                "button_url": "#",
+                "image": "assets/images/slider-slide-3-1920x1080.jpg",
+                "subtitle": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده",
+                "title": "رویا از شما، ساختن با ما"
+              }
+            ]
+          },
+          "widget": "hero_slider"
+        }
+      ],
+      "id": "row-845f485c"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-989873db",
+          "settings": {
+            "button_text": "بیشتر بخوانید",
+            "button_url": "#",
+            "heading": "خدمات سریع و مطمئن برای پروژه شما!"
+          },
+          "widget": "cta_banner"
+        }
+      ],
+      "id": "row-9845e1e5"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-12c14d4f",
+          "settings": {
+            "entries": [
+              {
+                "icon_class": "linear-icon-pencil-ruler",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "خدمات پیش ساختی"
+              },
+              {
+                "icon_class": "linear-icon-users",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "خدمات پیمانکاری"
+              },
+              {
+                "icon_class": "linear-icon-wall",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "خدمات ساخت و ساز"
+              },
+              {
+                "icon_class": "linear-icon-apartment",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "مدیریت ساخت و ساز"
+              },
+              {
+                "icon_class": "linear-icon-home4",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "طراحی سه بعدی ساختمان"
+              },
+              {
+                "icon_class": "linear-icon-pencil-ruler2",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "طراحی نقشه ساختمان"
+              }
+            ],
+            "heading": "خدمات ما"
+          },
+          "widget": "services_grid"
+        }
+      ],
+      "id": "row-982ea75c"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-5934bc2e",
+          "settings": {
+            "bg_image": "assets/images/bg-image-1.jpg",
+            "heading": "تاریخچه ما",
+            "highlights": [
+              {
+                "icon_class": "linear-icon-menu3",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از",
+                "title": "20 سال تجربه"
+              },
+              {
+                "icon_class": "linear-icon-users2",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان",
+                "title": "تیم اختصاصی"
+              }
+            ],
+            "progress_entries": [
+              {
+                "label": "ساخت و ساز",
+                "percent": 49
+              },
+              {
+                "label": "مدیریت پروژه",
+                "percent": 29
+              },
+              {
+                "label": "مدلسازی سه بعدی",
+                "percent": 86
+              }
+            ],
+            "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است"
+          },
+          "widget": "about_history"
+        }
+      ],
+      "id": "row-ee07ffb6"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-c4752b34",
+          "settings": {
+            "entries": [
+              {
+                "category": "سلامتی",
+                "image": "assets/project-1-652x491.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "url": "#"
+              },
+              {
+                "category": "آموزشی",
+                "image": "assets/project-2-652x491.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "url": "#"
+              },
+              {
+                "category": "تجاری",
+                "image": "assets/project-3-652x491.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "url": "#"
+              }
+            ],
+            "heading": "پروژه های در حال اجرا"
+          },
+          "widget": "running_projects"
+        }
+      ],
+      "id": "row-b6d4e7ab"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-abc7fe0f",
+          "settings": {
+            "entries": [
+              {
+                "icon_class": "linear-icon-coffee-cup",
+                "label": "سال تجربه",
+                "number": 50
+              },
+              {
+                "icon_class": "linear-icon-cube",
+                "label": "پروژه اجرا شده",
+                "number": 74
+              },
+              {
+                "icon_class": "linear-icon-chevrons-expand-horizontal",
+                "label": "شرکای تجاری",
+                "number": 15
+              },
+              {
+                "icon_class": "linear-icon-mustache-glasses",
+                "label": "مشتری راضی",
+                "number": 147
+              }
+            ]
+          },
+          "widget": "counters"
+        }
+      ],
+      "id": "row-18364bb4"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-e9f27baf",
+          "settings": {
+            "category_slug": "",
+            "heading": "پروژه های ما",
+            "limit": 8
+          },
+          "widget": "projects_showcase"
+        }
+      ],
+      "id": "row-a827880e"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-bf5257e7",
+          "settings": {
+            "bg_image": "assets/images/bg-image-8.jpg",
+            "button_text": "تماس با ما",
+            "button_url": "#",
+            "heading": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم\nلورم ایپسوم متن ساختگی با تولید سادگی"
+          },
+          "widget": "cta_quote"
+        }
+      ],
+      "id": "row-c50e9298"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-1ab88964",
+          "settings": {
+            "heading": "مدیران اجرایی",
+            "members": [
+              {
+                "image": "assets/calvin-fitzerald-418x315.jpg",
+                "name": "تونی استارک",
+                "role": "رئیس",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+              },
+              {
+                "image": "assets/taylor-wilson-418x315.jpg",
+                "name": "اولیور کوئین",
+                "role": "مدیر اجرایی",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+              },
+              {
+                "image": "assets/josh-wagner-418x315.jpg",
+                "name": "جان اسنو",
+                "role": "مدیر طراحی",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است."
+              }
+            ]
+          },
+          "widget": "team"
+        }
+      ],
+      "id": "row-6b17e338"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-e1c339ff",
+          "settings": {
+            "bg_image": "assets/images/bg-image-3.jpg",
+            "heading": "ارتباط با ما"
+          },
+          "widget": "contact_form"
+        }
+      ],
+      "id": "row-81f10acf"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-23f223a0",
+          "settings": {
+            "entries": [
+              {
+                "author": "جان اسنو",
+                "date": "20 شهریور 1398",
+                "image": "assets/home-post-1-418x315.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "لورم ایپسوم متن ساختگی با",
+                "url": "#"
+              },
+              {
+                "author": "جان اسنو",
+                "date": "20 شهریور 1398",
+                "image": "assets/home-post-2-418x315.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "لورم ایپسوم متن ساختگی با",
+                "url": "#"
+              },
+              {
+                "author": "جان اسنو",
+                "date": "20 شهریور 1398",
+                "image": "assets/home-post-3-418x315.jpg",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+                "title": "لورم ایپسوم متن ساختگی",
+                "url": "#"
+              }
+            ],
+            "heading": "اخبار جدید"
+          },
+          "widget": "news_posts"
+        }
+      ],
+      "id": "row-9176716e"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-0e845e4d",
+          "settings": {
+            "bg_image": "assets/images/bg-image-2.jpg",
+            "entries": [
+              {
+                "image": "assets/benedict-arnold-120x120.jpg",
+                "name": "تونی استارک",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است"
+              },
+              {
+                "image": "assets/deborah-quagmire-120x120.jpg",
+                "name": "جان اسنو",
+                "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است"
+              }
+            ],
+            "heading": "آنچه مردم می گویند"
+          },
+          "widget": "testimonials"
+        }
+      ],
+      "id": "row-0cc802ca"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-c1ae4cab",
+          "settings": {
+            "entries": [
+              {
+                "image": "assets/company-1-126x102.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/company-2-134x102.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/company-3-132x102.png",
+                "url": "#"
+              },
+              {
+                "image": "assets/company-4-126x102.png",
+                "url": "#"
+              }
+            ],
+            "heading": "مشتریان ما"
+          },
+          "widget": "clients_logos"
+        }
+      ],
+      "id": "row-64582cb7"
+    },
+    {
+      "boxes": [
+        {
+          "id": "box-e87ef3e9",
+          "settings": {
+            "address": "تبریز، خیابان ولیعصر، جنب بانک ملت، ساختمان گلستان، طبقه 756",
+            "copyright_text": "کلیه حقوق این وب‌سایت محفوظ است.",
+            "email": "info@sample.com",
+            "facebook": "#",
+            "hours": "شنبه تا پنج‌شنبه: 10 صبح الی 8 شب",
+            "instagram": "#",
+            "logo": "assets/logo-inverse-151x44.png",
+            "map_embed_url": "",
+            "phones": [
+              {
+                "phone": "(800) 123-0045"
+              },
+              {
+                "phone": "(800) 123-0045"
+              }
+            ],
+            "quick_links": [
+              {
+                "label": "اخبار صنعت",
+                "url": "#"
+              },
+              {
+                "label": "پروژه های در حال اجرا",
+                "url": "#"
+              },
+              {
+                "label": "خدمات ما",
+                "url": "#"
+              },
+              {
+                "label": "تماس",
+                "url": "#"
+              }
+            ],
+            "telegram": "#",
+            "text": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
+            "twitter": "#"
+          },
+          "widget": "footer"
+        }
+      ],
+      "id": "row-b0708224"
+    }
+  ],
+  "created_at": "2026-09-07 16:07:48",
+  "updated_at": "2026-09-07 16:16:01"
+}

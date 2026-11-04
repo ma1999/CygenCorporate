@@ -1,0 +1,10 @@
+<section class="section-md bg-accent bg-image text-center" style="background-image: url({{ asset(settings.bg_image) }});">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-11 col-lg-9 col-xl-8">
+                <h4 class="heading-decorated" style="white-space: pre-line;">{{ settings.heading }}</h4>
+                {% if settings.button_text %}<a class="button button-primary" href="{{ settings.button_url }}">{{ settings.button_text }}</a>{% endif %}
+            </div>
+        </div>
+    </div>
+</section>

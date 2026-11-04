@@ -1,0 +1,89 @@
+2026-11-04 11:27:09,082 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:27:34,332 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:34:29,023 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:35:20,869 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:36:09,719 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:36:45,905 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:37:34,155 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:38:54,696 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:40:21,136 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:41:33,481 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:43:27,589 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:44:53,383 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:46:03,203 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:47:15,804 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 11:59:36,663 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 12:04:36,400 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 12:39:43,639 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 12:40:21,209 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 12:40:43,394 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 12:54:27,372 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:07:27,267 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:26:29,115 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:27:21,446 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:43:03,114 [ERROR] Plugin 'projects' toggle failed: The setup method 'register_blueprint' can no longer be called on the application. It has already handled its first request, any changes will not be applied consistently.
+Make sure all imports, decorators, functions, etc. needed to set up the application are done before running it.
+2026-11-04 13:45:02,045 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:49:34,906 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 13:49:58,522 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:05:39,068 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:12:23,168 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:12:47,261 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:32:28,205 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:43:39,043 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 14:45:48,882 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:46:45,873 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 14:46:48,527 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 14:51:19,218 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 14:52:31,206 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 15:15:57,975 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:16:00,348 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:16:10,419 [INFO] revalidate sent to localhost:3000 tags=['*', 'site']
+2026-11-04 15:16:12,437 [INFO] revalidate sent to localhost:3000 tags=['*', 'site']
+2026-11-04 15:16:23,353 [INFO] revalidate sent to localhost:3000 tags=['*', 'site']
+2026-11-04 15:16:25,387 [INFO] revalidate sent to localhost:3000 tags=['*', 'site']
+2026-11-04 15:21:09,073 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:21:27,500 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:21:34,987 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:21:45,531 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:22:24,255 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:22:33,443 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:30:37,298 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:34:07,485 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:35:54,547 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:36:06,954 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:49:14,200 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:55:40,881 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:58:07,975 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:59:06,721 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 15:59:08,978 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:00:29,478 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 16:01:48,976 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 16:26:52,788 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:26:55,069 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:29:06,657 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 16:31:10,125 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 16:31:36,830 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 16:33:18,956 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:40:29,082 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 16:41:13,336 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:41:15,157 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:43:14,042 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 16:43:20,326 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 16:43:31,685 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 16:45:05,675 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 16:49:53,594 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:50:01,502 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 16:51:35,567 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 17:06:29,737 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 17:06:38,268 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 17:25:20,439 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 17:25:22,759 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 17:25:44,817 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 17:27:34,779 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 17:28:10,199 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 17:28:26,188 [INFO] revalidate sent to localhost:3000 tags=['page:testttt', 'pages', 'sitemap']
+2026-11-04 17:29:21,153 [INFO] revalidate sent to localhost:3000 tags=['page:home', 'pages', 'sitemap']
+2026-11-04 17:38:08,747 [INFO] revalidate sent to localhost:3000 tags=['pages', 'sitemap']
+2026-11-04 18:32:05,888 [INFO] Server starting on http://127.0.0.1:5000
+2026-11-04 18:32:09,165 [INFO] Server starting on http://127.0.0.1:5000

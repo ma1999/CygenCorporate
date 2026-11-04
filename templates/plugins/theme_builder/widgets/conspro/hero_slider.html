@@ -1,0 +1,31 @@
+<!-- Hero Slider -->
+<section class="main-slider">
+    <div class="hero-slider-outer owl-carousel owl-theme">
+        {% for slide in settings.slides %}
+        <div class="hero-slide" style="position:relative;background-image:url('{{ asset(slide.image) }}');background-size:cover;background-position:center center;min-height:520px;display:flex;align-items:center;">
+            <div class="auto-container">
+                <div class="hero-slide-content" style="max-width:640px;color:#fff;">
+                    <h2 style="color:#fff;">{{ slide.title }}</h2>
+                    <div class="text" style="color:#fff;">{{ slide.subtitle }}</div>
+                    {% if slide.button_text %}
+                    <a href="{{ slide.button_url }}" class="theme-btn btn-style-one">{{ slide.button_text }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<script>
+(function(){
+    if (window.jQuery) {
+        jQuery(function($){
+            $('.hero-slider-outer').owlCarousel({
+                items: 1, loop: true, nav: true, dots: true,
+                autoplay: true, autoplayTimeout: 6000, rtl: true,
+            });
+        });
+    }
+})();
+</script>
+<!--End Hero Slider-->

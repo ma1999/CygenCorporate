@@ -1,0 +1,17 @@
+<section class="section-lg bg-image context-dark text-center" style="background-image: url({{ asset(settings.bg_image) }});">
+    <div class="container">
+        <h4 class="heading-decorated">{{ settings.heading }}</h4>
+        <div class="row justify-content-center testimonials-creek">
+            {% for e in settings.entries %}
+            <div class="col-lg-8">
+                <div class="quote-default">
+                    <div class="quote-default__image"><img src="{{ asset(e.image) }}" alt=""></div>
+                    <div class="quote-default__text"><p class="q">{{ e.text }}</p></div>
+                    <p class="quote-default__cite">{{ e.name }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<style>.testimonials-creek{display:flex;flex-wrap:wrap;justify-content:center;}</style>

@@ -1,0 +1,85 @@
+{% set A = '/assets/admin-ui/' %}
+<!DOCTYPE html>
+<html lang="fa" class="light-style layout-wide customizer-hide" dir="rtl" data-theme="theme-default" data-assets-path="{{ A }}" data-template="vertical-menu-template">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>ورود به پنل مدیریت</title>
+  <link rel="icon" type="image/x-icon" href="{{ A }}img/favicon/favicon.ico" />
+  <link rel="stylesheet" href="{{ A }}vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/fonts/tabler-icons.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/css/rtl/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="{{ A }}vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="{{ A }}css/demo.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/node-waves/node-waves.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/libs/toastr/toastr.css" />
+  <link rel="stylesheet" href="{{ A }}vendor/css/pages/page-auth.css" />
+  <link rel="stylesheet" href="{{ A }}css/rtl.css" />
+  <script src="{{ A }}vendor/js/helpers.js"></script>
+  <script src="{{ A }}vendor/js/template-customizer.js"></script>
+  <script src="{{ A }}js/config.js"></script>
+</head>
+<body>
+<div class="authentication-wrapper authentication-basic container-p-y">
+  <div class="authentication-inner py-4">
+    <div class="card">
+      <div class="card-body">
+        <div class="app-brand justify-content-center mb-4">
+          <span class="app-brand-logo demo"><i class="ti ti-layout-dashboard text-primary" style="font-size:2.2rem"></i></span>
+          <span class="app-brand-text demo text-body fw-bold ms-1">پنل مدیریت</span>
+        </div>
+        <h4 class="mb-1 pt-2">خوش آمدید 👋</h4>
+        <p class="mb-4">برای ادامه وارد حساب مدیر سیستم شوید</p>
+        <form id="login-form" novalidate>
+          <div class="mb-3">
+            <label for="username" class="form-label">نام کاربری</label>
+            <input type="text" class="form-control" id="username" name="username" autofocus autocomplete="username" dir="ltr" />
+            <div class="text-danger small mt-1" id="err-username" hidden></div>
+          </div>
+          <div class="mb-3 form-password-toggle">
+            <label class="form-label" for="password">رمز عبور</label>
+            <div class="input-group input-group-merge">
+              <input type="password" id="password" class="form-control" name="password" autocomplete="current-password" dir="ltr" />
+              <span class="input-group-text cursor-pointer" id="toggle-pass"><i class="ti ti-eye-off"></i></span>
+            </div>
+          </div>
+          <button class="btn btn-primary d-grid w-100" type="submit" id="btn-login">ورود</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ A }}vendor/libs/jquery/jquery.js"></script>
+<script src="{{ A }}vendor/libs/popper/popper.js"></script>
+<script src="{{ A }}vendor/js/bootstrap.js"></script>
+<script src="{{ A }}vendor/libs/toastr/toastr.js"></script>
+<script src="{{ asset('app/api.js') }}"></script>
+<script>
+(function () {
+  const form = document.getElementById('login-form');
+  const next = new URLSearchParams(location.search).get('next');
+  document.getElementById('toggle-pass').addEventListener('click', () => {
+    const p = document.getElementById('password');
+    p.type = p.type === 'password' ? 'text' : 'password';
+  });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('btn-login');
+    const err = document.getElementById('err-username');
+    err.hidden = true;
+    btn.disabled = true;
+    try {
+      await Admin.api.post('/api/admin/auth/login', { username: form.username.value, password: form.password.value }, { noRedirect: true });
+      location.href = next && next.startsWith('/') && !next.startsWith('//') ? next : '/admin';
+    } catch (ex) {
+      if (ex.fields && ex.fields.username) { err.textContent = ex.fields.username; err.hidden = false; }
+      Admin.toast.err(ex.message);
+    } finally {
+      btn.disabled = false;
+    }
+  });
+})();
+</script>
+</body>
+</html>

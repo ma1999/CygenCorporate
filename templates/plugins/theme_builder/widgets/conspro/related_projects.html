@@ -1,0 +1,34 @@
+<!--Related Projects-->
+<div class="related-project">
+    <div class="auto-container">
+        <h2>{{ settings.heading }}</h2>
+    </div>
+    <div class="four-item-carousel owl-carousel owl-theme owl-rtl">
+        {% for p in related_products %}
+        <div class="gallery-item">
+            <div class="inner-box">
+                <figure class="image-box"><img src="{{ p.image_url or asset('assets/22.jpg') }}" alt="{{ p.name }}"></figure>
+                <div class="overlay-box">
+                    <div class="overlay-inner">
+                        <div class="content">
+                            <a href="/product/{{ p.slug }}" class="image-link"><span class="icon fa fa-link"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="gallery-item"><p>پروژه مرتبطی یافت نشد.</p></div>
+        {% endfor %}
+    </div>
+</div>
+<!--End Related Projects-->
+<script>
+(function(){
+    if (window.jQuery) {
+        jQuery(function($){
+            $('.related-project .four-item-carousel').owlCarousel({ items: 4, loop: true, margin: 20, rtl: true, nav: true });
+        });
+    }
+})();
+</script>

@@ -1,0 +1,57 @@
+<header class="page-header">
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-default rd-navbar-static">
+            <div class="rd-navbar-top-panel rd-navbar-top-panel-dark">
+                <div class="rd-navbar-top-panel__main">
+                    <div class="rd-navbar-top-panel__content">
+                        <div class="rd-navbar-top-panel__left">
+                            <ul class="rd-navbar-items-list">
+                                <li>
+                                    <div class="unit flex-row align-items-center unit-spacing-xs">
+                                        <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-map-marker"></span></div>
+                                        <div class="unit__body"><p>{{ settings.address }}</p></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="unit flex-row align-items-center unit-spacing-xs">
+                                        <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-telephone"></span></div>
+                                        <div class="unit__body">
+                                            <ul class="list-semicolon">
+                                                {% for p in settings.phones %}
+                                                <li><a href="tel:{{ p.phone }}"><span class="ltr-text d-inline-block">{{ p.phone }}</span></a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rd-navbar-top-panel__right">
+                            <ul class="list-inline-xxs">
+                                {% if settings.facebook %}<li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="{{ settings.facebook }}"></a></li>{% endif %}
+                                {% if settings.twitter %}<li><a class="icon icon-xxs icon-gray-darker fa fa-twitter" href="{{ settings.twitter }}"></a></li>{% endif %}
+                                {% if settings.instagram %}<li><a class="icon icon-xxs icon-gray-darker fa fa-instagram" href="{{ settings.instagram }}"></a></li>{% endif %}
+                                {% if settings.telegram %}<li><a class="icon icon-xxs icon-gray-darker fa fa-telegram" href="{{ settings.telegram }}"></a></li>{% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rd-navbar-inner">
+                <div class="rd-navbar-panel">
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <div class="rd-navbar-brand">
+                        <a class="brand-name" href="/"><img src="{{ asset(settings.logo) }}" alt=""></a>
+                    </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                        {% for item in settings.menu %}
+                        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

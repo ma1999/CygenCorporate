@@ -1,0 +1,17 @@
+<!--Page Title-->
+<section class="page-title" style="background-image:url('{{ asset(settings.bg_image) }}');">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="title-column col-md-6 col-sm-8 col-xs-12">
+                <h1>{{ product.name if product else settings.breadcrumb_current_label }}</h1>
+            </div>
+            <div class="breadcrumb-column col-md-6 col-sm-4 col-xs-12">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">{{ settings.breadcrumb_home_label }}</a></li>
+                    <li class="active">{{ settings.breadcrumb_current_label }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
